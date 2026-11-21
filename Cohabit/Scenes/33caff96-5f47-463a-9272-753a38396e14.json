@@ -1,0 +1,180 @@
+{
+  "id": "33caff96-5f47-463a-9272-753a38396e14",
+  "name": "MainScene",
+  "objects": [
+    {
+      "id": "1fca3151-e806-4bdc-87fd-8b59bb8cbb86",
+      "name": "Sister",
+      "type": "vrm",
+      "modelPath": "Assets/Models/Sis_3b1fdc3d.vrm",
+      "assetId": "Sister",
+      "transform": {
+        "position": {
+          "x": -0.9,
+          "y": -1.2,
+          "z": 1.6
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      },
+      "character": {
+        "blink": true,
+        "breathe": true,
+        "lookAtUser": "nearby"
+      }
+    },
+    {
+      "id": "c09faf0f-f862-4feb-93ea-4eaf50a6d726",
+      "name": "Quiz",
+      "type": "canvas",
+      "canvasSettings": {
+        "layoutId": "fd7d2d12-90af-4b46-a8cb-a5788ca18475",
+        "widthMeters": 0.4,
+        "heightMeters": 0.225,
+        "pixelsPerUnit": 2560
+      },
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": -0.5,
+          "z": 0.6
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      },
+      "assetId": "Quiz"
+    },
+    {
+      "id": "99599081-6744-4a0c-b640-253228254b46",
+      "name": "Settings",
+      "type": "canvas",
+      "canvasSettings": {
+        "layoutId": "1dcd9eee-2f13-4dca-afb4-83df474bbdb0",
+        "widthMeters": 0.6,
+        "heightMeters": 0.58,
+        "pixelsPerUnit": 2000
+      },
+      "transform": {
+        "position": {
+          "x": 0.9,
+          "y": 0.1,
+          "z": 1.4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      },
+      "assetId": "Settings"
+    },
+    {
+      "id": "a579be47-8964-4044-be5d-175b07dd5b82",
+      "name": "Consent",
+      "type": "canvas",
+      "canvasSettings": {
+        "layoutId": "8fd56b54-1708-4c7c-83cd-70292356241a",
+        "widthMeters": 0.5,
+        "heightMeters": 0.32,
+        "pixelsPerUnit": 2000
+      },
+      "transform": {
+        "position": {
+          "x": 0.9,
+          "y": -0.35,
+          "z": 1.4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      },
+      "assetId": "Consent"
+    },
+    {
+      "id": "a0e3164c-a3d5-40cf-b750-a39165a51b3e",
+      "name": "Address",
+      "type": "canvas",
+      "canvasSettings": {
+        "layoutId": "8fbb049d-2874-45bc-b2aa-229dca384adf",
+        "widthMeters": 0.5,
+        "heightMeters": 0.4,
+        "pixelsPerUnit": 2000
+      },
+      "transform": {
+        "position": {
+          "x": 1.55,
+          "y": 0.1,
+          "z": 1.4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      },
+      "assetId": "Address"
+    },
+    {
+      "id": "b5a588ad-cad8-4081-b2c0-9cd4e4dd1d61",
+      "name": "Seat",
+      "type": "primitive",
+      "primitiveType": "sphere",
+      "assetId": "Seat",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": -10,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 0.005,
+          "y": 0.005,
+          "z": 0.005
+        }
+      },
+      "material": {
+        "color": "#000000",
+        "metallic": 0,
+        "roughness": 0.5
+      }
+    }
+  ]
+}

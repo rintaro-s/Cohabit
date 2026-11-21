@@ -1,0 +1,376 @@
+{
+  "id": "1dcd9eee-2f13-4dca-afb4-83df474bbdb0",
+  "name": "Settings",
+  "scope": "canvas",
+  "resolution": {
+    "width": 1200,
+    "height": 1160
+  },
+  "root": {
+    "id": "3ecbe8db-aa23-4696-b822-bc4b343c3bf7",
+    "type": "Panel",
+    "layout": "Absolute",
+    "style": {
+      "width": "100%",
+      "height": "100%",
+      "backgroundColor": "#11151ef2",
+      "borderRadius": 44
+    },
+    "children": [
+      {
+        "id": "6bbcd6b2-399d-43f4-aca3-722abc7f5889",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 56,
+          "top": 36,
+          "width": 700,
+          "height": 68,
+          "fontSize": 54,
+          "color": "#ffffff"
+        },
+        "children": [],
+        "content": "Cohabit の設定"
+      },
+      {
+        "id": "e4f75d48-2d4e-4a58-aa21-d410292594e9",
+        "type": "Button",
+        "style": {
+          "position": "absolute",
+          "left": 930,
+          "top": 32,
+          "width": 220,
+          "height": 80,
+          "backgroundColor": "#2a3142",
+          "fontSize": 42,
+          "color": "#ffffff",
+          "borderRadius": 18
+        },
+        "children": [],
+        "content": "閉じる",
+        "bindingId": "setClose"
+      },
+      {
+        "id": "2004a4a5-a780-419e-b2f6-498a96635c79",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 56,
+          "top": 134,
+          "width": 760,
+          "height": 54,
+          "fontSize": 40,
+          "color": "#7be0a6"
+        },
+        "children": [],
+        "content": "",
+        "bindingId": "panelServer",
+        "bind": {
+          "key": "panel.server"
+        }
+      },
+      {
+        "id": "575f769d-395e-471d-8836-d15e02e505bb",
+        "type": "Button",
+        "style": {
+          "position": "absolute",
+          "left": 850,
+          "top": 124,
+          "width": 300,
+          "height": 74,
+          "backgroundColor": "#2a3142",
+          "fontSize": 38,
+          "color": "#ffffff",
+          "borderRadius": 18
+        },
+        "children": [],
+        "content": "アドレス変更",
+        "bindingId": "setServer"
+      },
+      {
+        "id": "251cfa5a-6d88-429b-8eb5-8025d322fc75",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 56,
+          "top": 208,
+          "width": 1090,
+          "height": 96,
+          "fontSize": 36,
+          "color": "#9aa3b8"
+        },
+        "children": [],
+        "content": "",
+        "bind": {
+          "key": "panel.inference"
+        }
+      },
+      {
+        "id": "498a7eb3-f7ca-425f-873d-7cc9e70efd17",
+        "type": "Panel",
+        "style": {
+          "position": "absolute",
+          "left": 0,
+          "top": 316,
+          "width": 1200,
+          "height": 844
+        },
+        "children": [
+          {
+            "id": "dee22f7b-9e6d-48f2-8aa0-7e7caf451154",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 0,
+              "width": 530,
+              "height": 80,
+              "backgroundColor": "#2a3142",
+              "fontSize": 40,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "写真を送る:  する",
+            "bindingId": "tglCamera"
+          },
+          {
+            "id": "80539c7f-7cf9-4825-a195-67b3895e705f",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 614,
+              "top": 0,
+              "width": 530,
+              "height": 80,
+              "backgroundColor": "#2a3142",
+              "fontSize": 40,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "マイク:  聞く",
+            "bindingId": "tglMic"
+          },
+          {
+            "id": "3422794b-f0f5-4911-9f37-a63f070be6d3",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 94,
+              "width": 530,
+              "height": 80,
+              "backgroundColor": "#2a3142",
+              "fontSize": 40,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "長い記憶:  残す",
+            "bindingId": "tglMemory"
+          },
+          {
+            "id": "5d03cbf2-8ab4-43be-9454-d6a4075b45d4",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 614,
+              "top": 94,
+              "width": 530,
+              "height": 80,
+              "backgroundColor": "#2a3142",
+              "fontSize": 40,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "話しかける:  する",
+            "bindingId": "tglTalk"
+          },
+          {
+            "id": "2b483ea8-f8d9-40c8-b932-6641da3803fa",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 194,
+              "width": 560,
+              "height": 48,
+              "fontSize": 38,
+              "color": "#9aa3b8"
+            },
+            "children": [],
+            "content": "覚えていること (新しい順)"
+          },
+          {
+            "id": "1c58ca21-d363-4e43-a0e8-62c9293f60be",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 246,
+              "width": 1090,
+              "height": 236,
+              "fontSize": 38,
+              "color": "#e3e8ff"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "panelMemory",
+            "bind": {
+              "key": "panel.memory"
+            }
+          },
+          {
+            "id": "d0288a43-9481-4f33-a4d2-0a23d892dc7a",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 494,
+              "width": 350,
+              "height": 74,
+              "backgroundColor": "#3a2730",
+              "fontSize": 38,
+              "color": "#ffc9c9",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "今日の記憶を消す",
+            "bindingId": "delToday"
+          },
+          {
+            "id": "988d6fe7-ad7e-4bf9-ae88-19139735af36",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 425,
+              "top": 494,
+              "width": 350,
+              "height": 74,
+              "backgroundColor": "#3a2730",
+              "fontSize": 38,
+              "color": "#ffc9c9",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "関係を消す",
+            "bindingId": "delRelation"
+          },
+          {
+            "id": "ef2c7f4b-2170-4054-a10d-68941b5bebeb",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 794,
+              "top": 494,
+              "width": 350,
+              "height": 74,
+              "backgroundColor": "#3a2730",
+              "fontSize": 38,
+              "color": "#ffc9c9",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "物の記録を消す",
+            "bindingId": "delObjects"
+          },
+          {
+            "id": "6086554f-7962-4691-ba75-f743a9a7a9c1",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 580,
+              "width": 350,
+              "height": 74,
+              "backgroundColor": "#3a2730",
+              "fontSize": 38,
+              "color": "#ffc9c9",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "席を忘れる",
+            "bindingId": "delSeat"
+          },
+          {
+            "id": "192a0aad-1c7b-489f-abec-cfa96d92fef7",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 425,
+              "top": 580,
+              "width": 350,
+              "height": 74,
+              "backgroundColor": "#5a2a33",
+              "fontSize": 38,
+              "color": "#ffd6d6",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "全部消す",
+            "bindingId": "delAll"
+          },
+          {
+            "id": "480f7504-c4ac-4f85-80e2-7dc1382335b0",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 666,
+              "width": 530,
+              "height": 74,
+              "backgroundColor": "#2d3550",
+              "fontSize": 38,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "PC を探し直す",
+            "bindingId": "pcScan"
+          },
+          {
+            "id": "7014dac9-143e-4417-a989-992882f71078",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 614,
+              "top": 666,
+              "width": 530,
+              "height": 74,
+              "backgroundColor": "#2a3142",
+              "fontSize": 38,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "部屋を歩く:  しない",
+            "bindingId": "tglPlay"
+          },
+          {
+            "id": "851f5be5-4973-4df3-9058-19978a563bf0",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 752,
+              "width": 1090,
+              "height": 90,
+              "fontSize": 36,
+              "color": "#ffd27a"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "panelNote",
+            "bind": {
+              "key": "panel.note"
+            }
+          }
+        ],
+        "bindingId": "setLower",
+        "layout": "Absolute"
+      }
+    ]
+  }
+}

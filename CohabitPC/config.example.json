@@ -1,0 +1,70 @@
+{
+  "port": 8000,
+  "token": "",
+  "llm": {
+    "backend": "lan_ollama",
+    "fallback": true,
+    "connectTimeout": 4,
+    "readTimeout": 60,
+    "queueWait": 45,
+    "lan_ollama": {
+      "label": "LAN の Ollama (192.168.0.40)",
+      "baseUrl": "http://192.168.0.40:11434/v1",
+      "apiKey": "",
+      "chatModel": "hf.co/unsloth/Qwen3.8-27B-GGUF:UD-Q4_K_XL",
+      "visionModel": "hf.co/unsloth/Qwen3.8-27B-GGUF:UD-Q4_K_XL",
+      "thinking": false
+    },
+    "cloud_api": {
+      "label": "クラウド API",
+      "baseUrl": "https://api.openai.com/v1",
+      "apiKey": "",
+      "chatModel": "gpt-4.1-mini",
+      "visionModel": "gpt-4.1-mini"
+    },
+    "local_qwen": {
+      "label": "この PC の LLM",
+      "baseUrl": "http://127.0.0.1:8080/v1",
+      "apiKey": "",
+      "chatModel": "qwen3.5-9b",
+      "visionModel": "qwen3.5-9b"
+    }
+  },
+  "stt": {
+    "engine": "openai",
+    "baseUrl": "https://api.openai.com/v1",
+    "apiKey": "",
+    "model": "whisper-1",
+    "fasterWhisperModel": "large-v3-turbo",
+    "device": "cuda"
+  },
+  "tts": {
+    "engine": "voicevox",
+    "voicevoxUrl": "http://127.0.0.1:50021",
+    "speaker": 58,
+    "speed": 1.1,
+    "pitch": 0.0,
+    "baseUrl": "https://api.openai.com/v1",
+    "apiKey": "",
+    "model": "gpt-4o-mini-tts",
+    "voice": "nova",
+    "autoLaunch": null,
+    "voicevoxPath": ""
+  },
+  "lev": {
+    "url": "http://127.0.0.1:8001",
+    "timeout": 10
+  },
+  "privacy": {
+    "allowImages": true,
+    "previewImages": true,
+    "logEvents": true
+  },
+  "tablet": {
+    "vrmPath": "../Cohabit/Assets/Models/Sis_3b1fdc3d.vrm",
+    "sisterName": "妹",
+    "studentName": "",
+    "keepLearning": true,
+    "keepAliveSeconds": 15
+  }
+}

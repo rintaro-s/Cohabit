@@ -1,0 +1,1323 @@
+{
+  "layster": {
+    "profile": "virtual",
+    "stage": "beta",
+    "version": "1.0.0"
+  },
+  "id": "8878a3c4-2c15-49c0-9038-6fb61548f8ca",
+  "name": "Cohabit",
+  "version": "1.0.0",
+  "irVersion": 6,
+  "createdAt": "2026-10-12T01:58:26.345Z",
+  "updatedAt": "2026-10-27T10:53:27.775Z",
+  "appType": "3d_ar_scene",
+  "targetDevice": "Meta_Quest",
+  "arSettings": {
+    "worldScale": 1,
+    "enableRemoteControl": false,
+    "remoteControlPort": 8765,
+    "remoteControlPassword": "",
+    "interaction": {
+      "controllerRay": true,
+      "handTracking": true
+    },
+    "trackingMode": "6dof",
+    "presentationMode": "world_anchored",
+    "defaultDepth": 2,
+    "backgroundMode": "passthrough"
+  },
+  "designSystem": {
+    "defaultFont": "Roboto-Regular.ttf",
+    "primaryColor": "#569cd6",
+    "secondaryColor": "#4ec9b0",
+    "backgroundColor": "#1e1e1e",
+    "textColor": "#FFFFFF"
+  },
+  "dataFlow": {
+    "dataSources": [],
+    "transforms": []
+  },
+  "scenes": [
+    {
+      "id": "33caff96-5f47-463a-9272-753a38396e14",
+      "name": "MainScene",
+      "objects": [
+        {
+          "id": "1fca3151-e806-4bdc-87fd-8b59bb8cbb86",
+          "name": "Sister",
+          "type": "vrm",
+          "modelPath": "Assets/Models/Sis_3b1fdc3d.vrm",
+          "assetId": "Sister",
+          "transform": {
+            "position": {
+              "x": -0.9,
+              "y": -1.2,
+              "z": 1.6
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          },
+          "character": {
+            "blink": true,
+            "breathe": true,
+            "lookAtUser": "nearby"
+          }
+        },
+        {
+          "id": "c09faf0f-f862-4feb-93ea-4eaf50a6d726",
+          "name": "Quiz",
+          "type": "canvas",
+          "canvasSettings": {
+            "layoutId": "fd7d2d12-90af-4b46-a8cb-a5788ca18475",
+            "widthMeters": 0.4,
+            "heightMeters": 0.225,
+            "pixelsPerUnit": 2560
+          },
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": -0.5,
+              "z": 0.6
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          },
+          "assetId": "Quiz"
+        },
+        {
+          "id": "99599081-6744-4a0c-b640-253228254b46",
+          "name": "Settings",
+          "type": "canvas",
+          "canvasSettings": {
+            "layoutId": "1dcd9eee-2f13-4dca-afb4-83df474bbdb0",
+            "widthMeters": 0.6,
+            "heightMeters": 0.58,
+            "pixelsPerUnit": 2000
+          },
+          "transform": {
+            "position": {
+              "x": 0.9,
+              "y": 0.1,
+              "z": 1.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          },
+          "assetId": "Settings"
+        },
+        {
+          "id": "a579be47-8964-4044-be5d-175b07dd5b82",
+          "name": "Consent",
+          "type": "canvas",
+          "canvasSettings": {
+            "layoutId": "8fd56b54-1708-4c7c-83cd-70292356241a",
+            "widthMeters": 0.5,
+            "heightMeters": 0.32,
+            "pixelsPerUnit": 2000
+          },
+          "transform": {
+            "position": {
+              "x": 0.9,
+              "y": -0.35,
+              "z": 1.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          },
+          "assetId": "Consent"
+        },
+        {
+          "id": "a0e3164c-a3d5-40cf-b750-a39165a51b3e",
+          "name": "Address",
+          "type": "canvas",
+          "canvasSettings": {
+            "layoutId": "8fbb049d-2874-45bc-b2aa-229dca384adf",
+            "widthMeters": 0.5,
+            "heightMeters": 0.4,
+            "pixelsPerUnit": 2000
+          },
+          "transform": {
+            "position": {
+              "x": 1.55,
+              "y": 0.1,
+              "z": 1.4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          },
+          "assetId": "Address"
+        },
+        {
+          "id": "b5a588ad-cad8-4081-b2c0-9cd4e4dd1d61",
+          "name": "Seat",
+          "type": "primitive",
+          "primitiveType": "sphere",
+          "assetId": "Seat",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": -10,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.005,
+              "y": 0.005,
+              "z": 0.005
+            }
+          },
+          "material": {
+            "color": "#000000",
+            "metallic": 0,
+            "roughness": 0.5
+          }
+        }
+      ]
+    }
+  ],
+  "uiLayouts": [
+    {
+      "id": "fd7d2d12-90af-4b46-a8cb-a5788ca18475",
+      "name": "Quiz",
+      "scope": "canvas",
+      "resolution": {
+        "width": 1024,
+        "height": 576
+      },
+      "root": {
+        "id": "0eb39a06-60dc-4ff1-9be6-e3525dae92ac",
+        "type": "Panel",
+        "layout": "Absolute",
+        "style": {
+          "width": "100%",
+          "height": "100%",
+          "backgroundColor": "#fbf6e9f2",
+          "borderRadius": 36
+        },
+        "children": [
+          {
+            "id": "4fc0ed24-9357-4c81-a819-ff11954443e1",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 44,
+              "top": 30,
+              "width": 936,
+              "height": 56,
+              "fontSize": 42,
+              "color": "#8a7650"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "quizTag",
+            "bind": {
+              "key": "quiz.tag"
+            }
+          },
+          {
+            "id": "d19d7c9b-bfb3-4b70-9096-3ea302c12ab1",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 44,
+              "top": 110,
+              "width": 936,
+              "height": 330,
+              "fontSize": 52,
+              "color": "#1b2a6b",
+              "textAlign": "left"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "quizText",
+            "bind": {
+              "key": "quiz.text"
+            },
+            "reveal": {
+              "speed": 24
+            }
+          },
+          {
+            "id": "3a3b61c1-dd9f-43ba-af6b-ce19f2afb7f1",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 32,
+              "top": 470,
+              "width": 960,
+              "height": 60,
+              "fontSize": 36,
+              "color": "#8a7650",
+              "textAlign": "center"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "quizFooter",
+            "bind": {
+              "key": "quiz.footer"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "aca40bf4-a610-494d-9e5b-7331b2e4658e",
+      "name": "HUD",
+      "scope": "uhd",
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "root": {
+        "id": "105f43bc-1b96-44cd-ae4c-eeb118137f52",
+        "type": "Panel",
+        "layout": "Absolute",
+        "style": {
+          "width": "100%",
+          "height": "100%"
+        },
+        "children": [
+          {
+            "id": "036d4320-86e4-409a-9d4b-c84b78c9149f",
+            "type": "Panel",
+            "style": {
+              "position": "absolute",
+              "left": 490,
+              "top": 236,
+              "width": 520,
+              "height": 56,
+              "backgroundColor": "#0d1018aa",
+              "borderRadius": 28
+            },
+            "children": [
+              {
+                "id": "e5d12560-18d3-4e0c-8f74-1fab289610ea",
+                "type": "Text",
+                "style": {
+                  "position": "absolute",
+                  "left": 24,
+                  "top": 10,
+                  "width": 480,
+                  "height": 40,
+                  "fontSize": 30,
+                  "color": "#e3e8ff"
+                },
+                "children": [],
+                "content": "",
+                "bindingId": "status",
+                "bind": {
+                  "key": "study.state"
+                }
+              }
+            ],
+            "layout": "Absolute"
+          },
+          {
+            "id": "e704b29e-90af-4fbc-be6c-ed9c6243284c",
+            "type": "Panel",
+            "style": {
+              "position": "absolute",
+              "left": 1026,
+              "top": 236,
+              "width": 404,
+              "height": 56,
+              "backgroundColor": "#0d1018aa",
+              "borderRadius": 28
+            },
+            "children": [
+              {
+                "id": "352abe2a-f0e3-4206-9f56-d67ca44aafba",
+                "type": "Text",
+                "style": {
+                  "position": "absolute",
+                  "left": 22,
+                  "top": 10,
+                  "width": 370,
+                  "height": 40,
+                  "fontSize": 30,
+                  "color": "#7be0a6"
+                },
+                "children": [],
+                "content": "",
+                "bindingId": "pcText",
+                "bind": {
+                  "key": "hud.pc"
+                }
+              }
+            ],
+            "layout": "Absolute"
+          },
+          {
+            "id": "c009127b-38fd-4bb9-b427-3fe3b324958d",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 490,
+              "top": 302,
+              "width": 940,
+              "height": 40,
+              "fontSize": 30,
+              "color": "#aab3cc"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "backend",
+            "bind": {
+              "key": "cohabit.backend"
+            }
+          },
+          {
+            "id": "488f6cf5-7a5a-45b6-91ba-18c8a07273e4",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 490,
+              "top": 348,
+              "width": 940,
+              "height": 40,
+              "fontSize": 30,
+              "color": "#ffd27a"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "sending",
+            "bind": {
+              "key": "cohabit.sending"
+            }
+          },
+          {
+            "id": "a8b8c045-7bdc-4651-b1a3-ebe7c558eecd",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 490,
+              "top": 394,
+              "width": 940,
+              "height": 40,
+              "fontSize": 30,
+              "color": "#ffd27a"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "notice",
+            "bind": {
+              "key": "hud.notice"
+            }
+          },
+          {
+            "id": "156b46a4-32ce-4ef0-ae18-fcfdbe5d965e",
+            "type": "Text",
+            "bindingId": "stage",
+            "bind": {
+              "key": "hud.stage"
+            },
+            "content": "",
+            "style": {
+              "position": "absolute",
+              "left": 490,
+              "top": 584,
+              "width": 940,
+              "height": 80,
+              "fontSize": 28,
+              "color": "#c8d3ff",
+              "textAlign": "center"
+            },
+            "children": []
+          },
+          {
+            "id": "0efecdb4-45ad-42a9-9c72-fd92e8093b5f",
+            "type": "Panel",
+            "style": {
+              "position": "absolute",
+              "left": 490,
+              "top": 668,
+              "width": 940,
+              "height": 190,
+              "backgroundColor": "#0d1018cc",
+              "borderRadius": 32
+            },
+            "children": [
+              {
+                "id": "97820385-6ff9-48b0-95f1-b9239c05be9f",
+                "type": "Text",
+                "style": {
+                  "position": "absolute",
+                  "left": 30,
+                  "top": 12,
+                  "width": 200,
+                  "height": 38,
+                  "fontSize": 30,
+                  "color": "#a9b6ff"
+                },
+                "children": [],
+                "content": "妹"
+              },
+              {
+                "id": "840de9c9-1344-4c9c-ad2d-ff206bc8931b",
+                "type": "Text",
+                "style": {
+                  "position": "absolute",
+                  "left": 30,
+                  "top": 54,
+                  "width": 880,
+                  "height": 124,
+                  "fontSize": 42,
+                  "color": "#ffffff",
+                  "textAlign": "center"
+                },
+                "children": [],
+                "content": "",
+                "bindingId": "subtitle",
+                "bind": {
+                  "key": "talk.line"
+                },
+                "reveal": {
+                  "speed": 20
+                }
+              }
+            ],
+            "bindingId": "subtitlePlate",
+            "layout": "Absolute"
+          },
+          {
+            "id": "62b041ab-2c0f-4d3b-b769-c154a5681527",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 490,
+              "top": 870,
+              "width": 940,
+              "height": 42,
+              "fontSize": 30,
+              "color": "#dfe5f5",
+              "textAlign": "center"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "guide",
+            "bind": {
+              "key": "hud.guide"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "1dcd9eee-2f13-4dca-afb4-83df474bbdb0",
+      "name": "Settings",
+      "scope": "canvas",
+      "resolution": {
+        "width": 1200,
+        "height": 1160
+      },
+      "root": {
+        "id": "3ecbe8db-aa23-4696-b822-bc4b343c3bf7",
+        "type": "Panel",
+        "layout": "Absolute",
+        "style": {
+          "width": "100%",
+          "height": "100%",
+          "backgroundColor": "#11151ef2",
+          "borderRadius": 44
+        },
+        "children": [
+          {
+            "id": "6bbcd6b2-399d-43f4-aca3-722abc7f5889",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 36,
+              "width": 700,
+              "height": 68,
+              "fontSize": 54,
+              "color": "#ffffff"
+            },
+            "children": [],
+            "content": "Cohabit の設定"
+          },
+          {
+            "id": "e4f75d48-2d4e-4a58-aa21-d410292594e9",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 930,
+              "top": 32,
+              "width": 220,
+              "height": 80,
+              "backgroundColor": "#2a3142",
+              "fontSize": 42,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "閉じる",
+            "bindingId": "setClose"
+          },
+          {
+            "id": "2004a4a5-a780-419e-b2f6-498a96635c79",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 134,
+              "width": 760,
+              "height": 54,
+              "fontSize": 40,
+              "color": "#7be0a6"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "panelServer",
+            "bind": {
+              "key": "panel.server"
+            }
+          },
+          {
+            "id": "575f769d-395e-471d-8836-d15e02e505bb",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 850,
+              "top": 124,
+              "width": 300,
+              "height": 74,
+              "backgroundColor": "#2a3142",
+              "fontSize": 38,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "アドレス変更",
+            "bindingId": "setServer"
+          },
+          {
+            "id": "251cfa5a-6d88-429b-8eb5-8025d322fc75",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 56,
+              "top": 208,
+              "width": 1090,
+              "height": 96,
+              "fontSize": 36,
+              "color": "#9aa3b8"
+            },
+            "children": [],
+            "content": "",
+            "bind": {
+              "key": "panel.inference"
+            }
+          },
+          {
+            "id": "498a7eb3-f7ca-425f-873d-7cc9e70efd17",
+            "type": "Panel",
+            "style": {
+              "position": "absolute",
+              "left": 0,
+              "top": 316,
+              "width": 1200,
+              "height": 844
+            },
+            "children": [
+              {
+                "id": "dee22f7b-9e6d-48f2-8aa0-7e7caf451154",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 56,
+                  "top": 0,
+                  "width": 530,
+                  "height": 80,
+                  "backgroundColor": "#2a3142",
+                  "fontSize": 40,
+                  "color": "#ffffff",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "写真を送る:  する",
+                "bindingId": "tglCamera"
+              },
+              {
+                "id": "80539c7f-7cf9-4825-a195-67b3895e705f",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 614,
+                  "top": 0,
+                  "width": 530,
+                  "height": 80,
+                  "backgroundColor": "#2a3142",
+                  "fontSize": 40,
+                  "color": "#ffffff",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "マイク:  聞く",
+                "bindingId": "tglMic"
+              },
+              {
+                "id": "3422794b-f0f5-4911-9f37-a63f070be6d3",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 56,
+                  "top": 94,
+                  "width": 530,
+                  "height": 80,
+                  "backgroundColor": "#2a3142",
+                  "fontSize": 40,
+                  "color": "#ffffff",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "長い記憶:  残す",
+                "bindingId": "tglMemory"
+              },
+              {
+                "id": "5d03cbf2-8ab4-43be-9454-d6a4075b45d4",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 614,
+                  "top": 94,
+                  "width": 530,
+                  "height": 80,
+                  "backgroundColor": "#2a3142",
+                  "fontSize": 40,
+                  "color": "#ffffff",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "話しかける:  する",
+                "bindingId": "tglTalk"
+              },
+              {
+                "id": "2b483ea8-f8d9-40c8-b932-6641da3803fa",
+                "type": "Text",
+                "style": {
+                  "position": "absolute",
+                  "left": 56,
+                  "top": 194,
+                  "width": 560,
+                  "height": 48,
+                  "fontSize": 38,
+                  "color": "#9aa3b8"
+                },
+                "children": [],
+                "content": "覚えていること (新しい順)"
+              },
+              {
+                "id": "1c58ca21-d363-4e43-a0e8-62c9293f60be",
+                "type": "Text",
+                "style": {
+                  "position": "absolute",
+                  "left": 56,
+                  "top": 246,
+                  "width": 1090,
+                  "height": 236,
+                  "fontSize": 38,
+                  "color": "#e3e8ff"
+                },
+                "children": [],
+                "content": "",
+                "bindingId": "panelMemory",
+                "bind": {
+                  "key": "panel.memory"
+                }
+              },
+              {
+                "id": "d0288a43-9481-4f33-a4d2-0a23d892dc7a",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 56,
+                  "top": 494,
+                  "width": 350,
+                  "height": 74,
+                  "backgroundColor": "#3a2730",
+                  "fontSize": 38,
+                  "color": "#ffc9c9",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "今日の記憶を消す",
+                "bindingId": "delToday"
+              },
+              {
+                "id": "988d6fe7-ad7e-4bf9-ae88-19139735af36",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 425,
+                  "top": 494,
+                  "width": 350,
+                  "height": 74,
+                  "backgroundColor": "#3a2730",
+                  "fontSize": 38,
+                  "color": "#ffc9c9",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "関係を消す",
+                "bindingId": "delRelation"
+              },
+              {
+                "id": "ef2c7f4b-2170-4054-a10d-68941b5bebeb",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 794,
+                  "top": 494,
+                  "width": 350,
+                  "height": 74,
+                  "backgroundColor": "#3a2730",
+                  "fontSize": 38,
+                  "color": "#ffc9c9",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "物の記録を消す",
+                "bindingId": "delObjects"
+              },
+              {
+                "id": "6086554f-7962-4691-ba75-f743a9a7a9c1",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 56,
+                  "top": 580,
+                  "width": 350,
+                  "height": 74,
+                  "backgroundColor": "#3a2730",
+                  "fontSize": 38,
+                  "color": "#ffc9c9",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "席を忘れる",
+                "bindingId": "delSeat"
+              },
+              {
+                "id": "192a0aad-1c7b-489f-abec-cfa96d92fef7",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 425,
+                  "top": 580,
+                  "width": 350,
+                  "height": 74,
+                  "backgroundColor": "#5a2a33",
+                  "fontSize": 38,
+                  "color": "#ffd6d6",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "全部消す",
+                "bindingId": "delAll"
+              },
+              {
+                "id": "480f7504-c4ac-4f85-80e2-7dc1382335b0",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 56,
+                  "top": 666,
+                  "width": 530,
+                  "height": 74,
+                  "backgroundColor": "#2d3550",
+                  "fontSize": 38,
+                  "color": "#ffffff",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "PC を探し直す",
+                "bindingId": "pcScan"
+              },
+              {
+                "id": "7014dac9-143e-4417-a989-992882f71078",
+                "type": "Button",
+                "style": {
+                  "position": "absolute",
+                  "left": 614,
+                  "top": 666,
+                  "width": 530,
+                  "height": 74,
+                  "backgroundColor": "#2a3142",
+                  "fontSize": 38,
+                  "color": "#ffffff",
+                  "borderRadius": 18
+                },
+                "children": [],
+                "content": "部屋を歩く:  しない",
+                "bindingId": "tglPlay"
+              },
+              {
+                "id": "851f5be5-4973-4df3-9058-19978a563bf0",
+                "type": "Text",
+                "style": {
+                  "position": "absolute",
+                  "left": 56,
+                  "top": 752,
+                  "width": 1090,
+                  "height": 90,
+                  "fontSize": 36,
+                  "color": "#ffd27a"
+                },
+                "children": [],
+                "content": "",
+                "bindingId": "panelNote",
+                "bind": {
+                  "key": "panel.note"
+                }
+              }
+            ],
+            "bindingId": "setLower",
+            "layout": "Absolute"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8fd56b54-1708-4c7c-83cd-70292356241a",
+      "name": "Consent",
+      "scope": "canvas",
+      "resolution": {
+        "width": 1000,
+        "height": 640
+      },
+      "root": {
+        "id": "bb639024-3361-4d0b-b8e7-00b12f867a4b",
+        "type": "Panel",
+        "layout": "Absolute",
+        "style": {
+          "width": "100%",
+          "height": "100%",
+          "backgroundColor": "#11151ef5",
+          "borderRadius": 40
+        },
+        "children": [
+          {
+            "id": "7ab1eb8a-4833-4236-8b3c-500827a46c35",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 48,
+              "top": 36,
+              "width": 904,
+              "height": 62,
+              "fontSize": 46,
+              "color": "#ffffff"
+            },
+            "children": [],
+            "content": "ノートの写真を PC の先生に見せてもいい？"
+          },
+          {
+            "id": "5ac3745d-3a60-4518-8127-6d59d3a5bc32",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 48,
+              "top": 116,
+              "width": 904,
+              "height": 360,
+              "fontSize": 36,
+              "color": "#d6dcf0"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "consentBody",
+            "bind": {
+              "key": "consent.body"
+            }
+          },
+          {
+            "id": "92a835f5-20f4-45bd-9140-5eab59b5f480",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 48,
+              "top": 512,
+              "width": 430,
+              "height": 92,
+              "backgroundColor": "#3d6bf0",
+              "fontSize": 42,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "送っていい",
+            "bindingId": "consentYes"
+          },
+          {
+            "id": "44fd93ac-1bef-4ce9-b57f-3882cc711d12",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 522,
+              "top": 512,
+              "width": 430,
+              "height": 92,
+              "backgroundColor": "#2a3142",
+              "fontSize": 42,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "送らない",
+            "bindingId": "consentNo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8fbb049d-2874-45bc-b2aa-229dca384adf",
+      "name": "Address",
+      "scope": "canvas",
+      "resolution": {
+        "width": 1000,
+        "height": 800
+      },
+      "root": {
+        "id": "2bf856d8-b9eb-4c5b-b15d-2b6a233d9429",
+        "type": "Panel",
+        "layout": "Absolute",
+        "style": {
+          "width": "100%",
+          "height": "100%",
+          "backgroundColor": "#11151ef5",
+          "borderRadius": 40
+        },
+        "children": [
+          {
+            "id": "fbe6470f-2962-4365-b947-bb60b4536ee2",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 48,
+              "top": 30,
+              "width": 600,
+              "height": 62,
+              "fontSize": 46,
+              "color": "#ffffff"
+            },
+            "children": [],
+            "content": "PC のアドレス"
+          },
+          {
+            "id": "0837d470-7ce9-4426-baeb-6a7ae405d9c0",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 48,
+              "top": 98,
+              "width": 904,
+              "height": 48,
+              "fontSize": 36,
+              "color": "#9aa3b8"
+            },
+            "children": [],
+            "content": "Cohabit PC の画面に出ているアドレス"
+          },
+          {
+            "id": "b47f7f65-b69e-4026-9c9b-eb159ba4e2d0",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 48,
+              "top": 152,
+              "width": 904,
+              "height": 70,
+              "fontSize": 54,
+              "color": "#ffffff"
+            },
+            "children": [],
+            "content": "",
+            "bind": {
+              "key": "panel.serverDraft"
+            }
+          },
+          {
+            "id": "ca04ef89-4b09-48e1-beed-62115a86332c",
+            "type": "Keyboard",
+            "style": {
+              "position": "absolute",
+              "left": 48,
+              "top": 236,
+              "width": 620,
+              "height": 530,
+              "fontSize": 46,
+              "backgroundColor": "#00000066"
+            },
+            "children": [],
+            "content": "123|456|789|.0:",
+            "bindingId": "serverKb",
+            "bind": {
+              "key": "panel.serverDraft"
+            }
+          },
+          {
+            "id": "7fdf7639-509b-4515-9c84-34d7d9ed7892",
+            "type": "Button",
+            "style": {
+              "position": "absolute",
+              "left": 700,
+              "top": 236,
+              "width": 252,
+              "height": 88,
+              "backgroundColor": "#2a3142",
+              "fontSize": 40,
+              "color": "#ffffff",
+              "borderRadius": 18
+            },
+            "children": [],
+            "content": "やめる",
+            "bindingId": "serverCancel"
+          },
+          {
+            "id": "9a70601c-25d3-4f91-9227-fbce369a7327",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 700,
+              "top": 344,
+              "width": 252,
+              "height": 300,
+              "fontSize": 36,
+              "color": "#9aa3b8"
+            },
+            "children": [],
+            "content": "ポートを書かなければ :8000\n入れたら Enter"
+          }
+        ]
+      }
+    }
+  ],
+  "models": [],
+  "extensions": {
+    "quest-room": {
+      "enabled": true,
+      "dataVersion": 1,
+      "settings": {
+        "loadRoom": true,
+        "requestSpaceSetup": true,
+        "roomColliders": true,
+        "showSurfaces": false,
+        "occlusion": true,
+        "publishToStore": true,
+        "highFidelity": false
+      }
+    },
+    "quest-input": {
+      "enabled": true,
+      "dataVersion": 1,
+      "settings": {
+        "publishToStore": true,
+        "scriptEvents": true,
+        "physicalKeyboard": true,
+        "micAutoStart": true,
+        "voiceThreshold": 0.35,
+        "micOutputRate": "16000",
+        "gestureHoldSeconds": 0.1
+      }
+    },
+    "vrm10": {
+      "enabled": true,
+      "dataVersion": 1,
+      "settings": {}
+    },
+    "quest-hands": {
+      "enabled": true,
+      "dataVersion": 1,
+      "settings": {
+        "look": "virtual",
+        "hands": true,
+        "controllers": true,
+        "handColor": "soft"
+      }
+    }
+  },
+  "storage": {
+    "persist": [
+      "memory.",
+      "learning.",
+      "relation.",
+      "settings."
+    ]
+  },
+  "buildSettings": {
+    "packageName": "com.arsist.cohabit",
+    "version": "1.0.0",
+    "versionCode": 1,
+    "minSdkVersion": 32,
+    "targetSdkVersion": 34,
+    "remoteInput": {
+      "udp": {
+        "enabled": true,
+        "port": 19100
+      },
+      "tcp": {
+        "enabled": true,
+        "port": 19101
+      },
+      "allowedEvents": []
+    }
+  },
+  "scripts": [
+    {
+      "id": "7758e21a-6ba1-4c30-a075-092fc6cff0e2",
+      "name": "設定",
+      "trigger": {
+        "type": "onStart"
+      },
+      "code": "// ==== 設定・PC とのつながり (仕様 8.1 / 8.4 / 8.6 / 11.3) ====\n// 考えること (会話・ヒント・答え合わせ・ノートを読む・声) は、同じ LAN の PC で動く「Cohabit PC」(tmp/CohabitPC) がする。\n// タブレットと同じ「PC の先生」(/tablet/api/*) を使うので、教科は決めない。\n// PC は自動で探す: 前につながったアドレス → CONFIG.server → 同じネットワーク (/24) を順に探す。見つけたら覚える。\n// アドレスを手で入れる (設定 → アドレス変更) のは、どうしても見つからないときだけ。\n// 方針: 性能より安定。通信には必ず時間切れがあり、用事ごとに同時に 1 本だけ。PC が無くても勉強は続けられる。\nvar CONFIG = {\n  server: 'http://192.168.0.12:8000', // 最初に試す PC。見つからなければ、このアドレスの /24 を探す\n  port: 8000,\n  token: '',            // PC アプリで合言葉を決めたときだけ\n  character: 'Sister',\n  chatModel: 'cohabit-chat',     // PC アプリが、PC の設定のモデルに置き換える\n  visionModel: 'cohabit-vision', // 画像入力に対応したモデル (PC の設定)\n  sttModel: 'whisper-1',\n  ttsModel: 'tts-1', ttsVoice: 'nova',\n};\n\n// ---- 小物 ----\nfunction nowIso() { return new Date().toISOString(); }\nfunction secondsSince(iso) { return iso ? (Date.now() - new Date(iso).getTime()) / 1000 : Infinity; }\nfunction clip(text, n) { text = String(text == null ? '' : text); return text.length > n ? text.slice(0, n - 1) + '…' : text; }\nfunction errText(e) { return e && e.message ? e.message : String(e); }\n// 例外を外に出さない (タイマー・通信・ボタンの中で使う)。同じ場所の失敗は 1 分に 1 回だけログに出す\nvar ERROR_LOGGED = {};\nfunction attempt(label, fn) {\n  try { return fn(); } catch (e) {\n    var now = Date.now();\n    if (!ERROR_LOGGED[label] || now - ERROR_LOGGED[label] > 60000) { ERROR_LOGGED[label] = now; error(label + ': ' + errText(e)); }\n    return undefined;\n  }\n}\nfunction safe(label, fn) { return function () { var self = this, args = arguments; return attempt(label, function () { return fn.apply(self, args); }); }; }\nfunction later(label, ms, fn) { return setTimeout(safe(label, fn), ms); }\n// LLM の返事から最初の JSON を取り出す (前後に文章が付いていても読む)\nfunction firstJson(text) {\n  if (!text) return null;\n  var start = text.indexOf('{');\n  var end = text.lastIndexOf('}');\n  if (start < 0 || end <= start) return null;\n  try { return JSON.parse(text.slice(start, end + 1)); } catch (e) { return null; }\n}\nfunction replyText(r) {\n  return r && r.ok && r.json && r.json.choices && r.json.choices[0] && r.json.choices[0].message ? r.json.choices[0].message.content : null;\n}\nvar HAS = {\n  room: typeof room !== 'undefined', controller: typeof controller !== 'undefined', hands: typeof hands !== 'undefined',\n  mic: typeof mic !== 'undefined', headset: typeof headset !== 'undefined', camera: typeof camera !== 'undefined',\n  vrm: typeof vrm !== 'undefined', audio: typeof audio !== 'undefined',\n};\nfunction sisterHere() { return HAS.vrm && attempt('vrm.exists', function () { return vrm.exists(CONFIG.character); }) === true; }\n\n// ---- 利用者が決めること (端末に残る: settings.*) ----\nvar Settings = {\n  get: function (key, fallback) { var v = store.get('settings.' + key); return v === null || v === undefined ? fallback : v; },\n  set: function (key, value) { store.set('settings.' + key, value); if (typeof Panel !== 'undefined') attempt('panel.refresh', Panel.refresh); },\n};\n\nfunction authHeaders() { var h = {}; if (CONFIG.token) h['X-Cohabit-Token'] = CONFIG.token; return h; }\nfunction url(path) { return PC.base + path; }\nfunction shortServer() { return (PC.base || PC.known()).replace(/^https?:\\/\\//, ''); }\n\n// ---- 通信: 用事ごとに同時に 1 本、必ず時間切れ、返事の中の例外は外に出さない ----\nvar Net = {\n  busy: {},\n  call: function (purpose, opts, fn) {\n    if (Net.busy[purpose]) return false;\n    Net.busy[purpose] = true;\n    var done = false;\n    var finish = function (r) {\n      if (done) return;\n      done = true;\n      Net.busy[purpose] = false;\n      if (fn) attempt('net ' + purpose, function () { fn(r || { ok: false, status: 0, error: 'noReply' }); });\n    };\n    opts.timeout = opts.timeout || 10;\n    if (!opts.headers) opts.headers = authHeaders();\n    // 返事が来ないまま残らないように見張る (時間切れ + 5 秒)\n    var watchdog = setTimeout(function () { if (!done) { log('net ' + purpose + ': no reply; giving up'); finish({ ok: false, status: 0, error: 'watchdog' }); } }, (opts.timeout + 5) * 1000);\n    try {\n      api.request(opts, function (r) { clearTimeout(watchdog); finish(r); });\n    } catch (e) {\n      clearTimeout(watchdog);\n      finish({ ok: false, status: 0, error: errText(e) });\n    }\n    return true;\n  },\n  isBusy: function (purpose) { return !!Net.busy[purpose]; },\n};\n\n// ---- LLM を使う用事 ----\n// 頼まれた用事 (声・ヒント・採点・問題) は同時に 1 本。2 つまで順に待たせる (3 つ目が来たら、いちばん古いものをやめる)。\n// 裏の用事 (手が止まったときのノート確認・机の物) は、ほかに何も無いときだけ 1 本。裏の用事が走っていても、頼まれた用事は\n// 待たずに送る (PC の側で頼まれた用事を先に回す)。\nvar Llm = {\n  busy: null,      // 頼まれた用事の名前\n  busySince: 0,\n  bg: null,        // 裏の用事の名前\n  bgSince: 0,\n  waiting: [],\n  idle: function () { return !Llm.busy && !Llm.bg && !Llm.waiting.length; },\n  run: function (purpose, opts, fn, userAsked) {\n    if (!PC.online) { attempt('llm ' + purpose, function () { fn({ ok: false, status: 0, error: 'offline' }); }); return true; }\n    if (!userAsked) {\n      if (!Llm.idle() || Net.isBusy('stt')) return false; // 声を文字にしている間も、裏の用事は始めない\n      Llm.bg = purpose;\n      Llm.bgSince = Date.now();\n      var ok = Net.call('llm-bg', opts, function (r) { Llm.bg = null; Stage.render(); attempt('llm ' + purpose, function () { fn(r); }); });\n      if (!ok) Llm.bg = null;\n      Stage.render();\n      return ok;\n    }\n    if (Llm.busy) {\n      Llm.waiting.push({ purpose: purpose, opts: opts, fn: fn });\n      if (Llm.waiting.length > 2) {\n        var old = Llm.waiting.shift();\n        attempt('llm superseded', function () { old.fn({ ok: false, status: 0, error: 'superseded' }); });\n      }\n      return true;\n    }\n    Llm.busy = purpose;\n    Llm.busySince = Date.now();\n    Stage.render();\n    var started = Net.call('llm', opts, function (r) {\n      Llm.busy = null;\n      if (!r.ok && r.error !== 'superseded') Stage.fail(r);\n      Stage.render();\n      attempt('llm ' + purpose, function () { fn(r); });\n      var next = Llm.waiting.shift();\n      if (next) Llm.run(next.purpose, next.opts, next.fn, true);\n    });\n    if (!started) { Llm.busy = null; attempt('llm ' + purpose, function () { fn({ ok: false, status: 0, error: 'busy' }); }); }\n    return true;\n  },\n};\n\n// ---- PC を探す・つながりを見る ----\n// 状態: searching (探している) / online / notFound (一通り探して見つからない。少し間を空けて探し続ける)\nvar PC = {\n  base: '',\n  online: false,\n  state: 'searching',\n  lastOk: 0,\n  fails: 0,\n  checking: false,\n  scanning: false,\n  scanId: 0,\n  lastScanAt: 0,\n  nextCheckAt: 0,\n  inference: '',\n  inferenceShort: '',\n  where: {},\n  allowImages: true,\n  wearing: true,\n  presenceSent: null,\n  listeners: [],\n\n  onOnline: function (fn) { PC.listeners.push(fn); },\n  known: function () { return String(Settings.get('server', CONFIG.server) || CONFIG.server).replace(/\\/+$/, ''); },\n  normalize: function (text) {\n    text = String(text || '').trim().replace(/\\s+/g, '').replace(/\\/+$/, '');\n    if (!text) return '';\n    if (!/^https?:\\/\\//.test(text)) text = 'http://' + text;\n    if (!/:\\d+$/.test(text.replace(/^https?:\\/\\//, ''))) text += ':' + CONFIG.port;\n    return text;\n  },\n\n  // 1 か所に聞く。Cohabit PC なら fn(json)、違えば fn(null)。たくさん同時に聞く (探す) ので Net は通さない\n  probe: function (base, timeout, fn) {\n    var done = false;\n    var finish = function (json) { if (done) return; done = true; attempt('pc.probe', function () { fn(json); }); };\n    var watchdog = setTimeout(function () { finish(null); }, (timeout + 4) * 1000);\n    try {\n      api.request({ url: base + '/health', method: 'GET', headers: authHeaders(), responseType: 'json', timeout: timeout }, function (r) {\n        clearTimeout(watchdog);\n        finish(r && r.ok && r.json && r.json.app === 'cohabit-pc' ? r.json : null);\n      });\n    } catch (e) { clearTimeout(watchdog); finish(null); }\n  },\n\n  // 毎秒から呼ぶ。実際に聞くのは、つながっていれば 10 秒ごと、切れていれば 5 秒ごと\n  tick: function () {\n    var now = Date.now();\n    if (PC.online && PC.presenceSent !== PC.wearing) PC.sendPresence();\n    if (PC.checking || PC.scanning || now < PC.nextCheckAt) return;\n    if (PC.online) { PC.nextCheckAt = now + 10000; PC.health(); return; }\n    PC.nextCheckAt = now + 5000;\n    PC.tryKnown();\n  },\n\n  health: function () {\n    PC.checking = true;\n    PC.probe(PC.base, 4, function (json) {\n      PC.checking = false;\n      if (json) { PC.fails = 0; PC.accept(PC.base, json); return; }\n      PC.fails += 1;\n      if (PC.fails >= 2) PC.lost(); // 1 回の取りこぼしでは切れたことにしない\n      else PC.nextCheckAt = Date.now() + 3000;\n    });\n  },\n\n  // 覚えているアドレスを順に試す。だめなら (1 分に 1 回まで) 同じネットワークを探す\n  tryKnown: function () {\n    var list = [];\n    [PC.base, PC.known(), PC.normalize(CONFIG.server)].forEach(function (b) { if (b && list.indexOf(b) < 0) list.push(b); });\n    PC.checking = true;\n    var i = 0;\n    var next = function () {\n      if (PC.online) { PC.checking = false; return; }\n      if (i >= list.length) {\n        PC.checking = false;\n        if (Date.now() - PC.lastScanAt >= 60000) PC.scan(list[0]);\n        else if (PC.state !== 'notFound' && PC.lastScanAt) { PC.state = 'notFound'; Hud.pc(); }\n        return;\n      }\n      var base = list[i++];\n      PC.probe(base, 2, function (json) { if (json) { PC.checking = false; PC.accept(base, json); } else next(); });\n    };\n    next();\n  },\n\n  // 同じ /24 を、最後のアドレスに近い順に 16 台ずつ聞く (1 台 1 秒で時間切れ。全部で 20 秒くらい)\n  scan: function (around) {\n    var m = /^(https?:\\/\\/)(\\d+)\\.(\\d+)\\.(\\d+)\\.(\\d+)(?::(\\d+))?$/.exec(around || '');\n    PC.lastScanAt = Date.now();\n    if (!m) { PC.state = 'notFound'; Hud.pc(); return; }\n    var prefix = m[1] + m[2] + '.' + m[3] + '.' + m[4] + '.';\n    var port = m[6] || String(CONFIG.port);\n    var last = +m[5];\n    var hosts = [];\n    for (var d = 1; d < 254; d++) {\n      if (last - d >= 1) hosts.push(last - d);\n      if (last + d <= 254) hosts.push(last + d);\n    }\n    var id = ++PC.scanId;\n    PC.scanning = true;\n    PC.state = 'searching';\n    Hud.pc();\n    log('PC: scanning ' + prefix + '1-254:' + port);\n    var pos = 0;\n    var batch = function () {\n      if (id !== PC.scanId || PC.online) { PC.scanning = false; return; }\n      if (pos >= hosts.length) {\n        PC.scanning = false;\n        PC.state = 'notFound';\n        Hud.pc();\n        log('PC: not found on ' + prefix + '0/24');\n        if (!PC.toldNotFound) { PC.toldNotFound = true; Hud.notice('PC で Cohabit PC を起動すると、自動でつながります', 20); }\n        return;\n      }\n      var group = hosts.slice(pos, pos + 16);\n      pos += group.length;\n      var left = group.length;\n      var found = null;\n      group.forEach(function (h) {\n        var base = prefix + h + ':' + port;\n        PC.probe(base, 1, function (json) {\n          if (json && !found) found = { base: base, json: json };\n          left -= 1;\n          if (left > 0) return;\n          if (id !== PC.scanId) return;\n          if (found) { PC.scanning = false; PC.accept(found.base, found.json); }\n          else later('pc.scan', 50, batch);\n        });\n      });\n    };\n    batch();\n  },\n\n  accept: function (base, json) {\n    var was = PC.online;\n    PC.base = base;\n    PC.online = true;\n    PC.state = 'online';\n    PC.lastOk = Date.now();\n    PC.scanId++;\n    PC.nextCheckAt = Date.now() + 10000;\n    PC.inference = json.inference && json.inference.text ? json.inference.text : '';\n    PC.inferenceShort = inferenceShort(json.inference);\n    PC.where = {};\n    var parts = json.inference && json.inference.parts || {};\n    for (var k in parts) PC.where[k] = parts[k] && parts[k].where;\n    PC.allowImages = json.allowImages !== false;\n    if (PC.known() !== base) Settings.set('server', base);\n    Hud.pc();\n    if (!was) {\n      log('PC connected: ' + base);\n      Hud.notice('PC につながりました (' + shortServer() + ')', 6);\n      PC.presenceSent = null;\n      Report.event('session', { what: 'pc_online', text: 'PC につながった' });\n      PC.listeners.forEach(function (fn) { attempt('pc.onOnline', fn); });\n    }\n  },\n\n  lost: function () {\n    if (!PC.online) return;\n    PC.online = false;\n    PC.state = 'searching';\n    PC.fails = 0;\n    PC.nextCheckAt = Date.now() + 3000;\n    log('PC lost: ' + PC.base);\n    Hud.pc();\n  },\n\n  // 設定パネルでアドレスを入れた / 「PC を探し直す」\n  useAddress: function (text) {\n    var base = PC.normalize(text);\n    if (!base) return;\n    Settings.set('server', base);\n    PC.lost();\n    PC.base = base;\n    PC.scanId++;\n    PC.scanning = false;\n    PC.lastScanAt = 0;\n    PC.nextCheckAt = 0;\n    PC.state = 'searching';\n    Hud.pc();\n  },\n  rescan: function () {\n    PC.lost();\n    PC.scanId++;\n    PC.scanning = false;\n    PC.lastScanAt = 0;\n    PC.nextCheckAt = 0;\n    PC.state = 'searching';\n    Hud.pc();\n  },\n\n  // ヘッドセットをかぶった / 外した (タブレットの妹が引っ込む / 出てくる)\n  setWearing: function (on) { PC.wearing = !!on; if (PC.online) PC.sendPresence(); },\n  sendPresence: function () {\n    var value = PC.wearing;\n    Net.call('presence', { url: url('/tablet/api/presence'), method: 'POST', json: { wearing: value }, responseType: 'json', timeout: 4 }, function (r) {\n      if (r.ok) PC.presenceSent = value;\n    });\n  },\n};\n\n// 「会話: クラウド / 声: この PC / 判断: この PC」(HUD の 1 行。仕様 11.3)\nvar WHERE_JA = { this_pc: 'この PC', lan: 'LAN の PC', cloud: 'クラウド', off: '使わない' };\nfunction inferenceShort(inf) {\n  if (!inf) return '';\n  if (!inf.parts) return inf.text || '';\n  var w = function (k) { var p = inf.parts[k]; return p ? (WHERE_JA[p.where] || p.where) : '?'; };\n  var lev = inf.parts.lev && inf.parts.lev.where !== 'off' ? w('lev') : '端末の決まり';\n  return '会話: ' + w('chat') + ' / 声: ' + w('tts') + ' / 判断: ' + lev;\n}\n\n// ---- PC の画面へ記録を送る (仕様 8.4 の形。画像・音声は入れない) ----\nvar SESSION_ID = 'ses_' + Date.now().toString(36);\nvar Report = {\n  queue: [],\n  status: null, // 状態のまとめを返す関数 (「一緒に勉強」が入れる)\n\n  event: function (type, payload, confidence, sensor) {\n    Report.queue.push({\n      event_id: 'evt_' + Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36),\n      session_id: SESSION_ID, observed_at: nowIso(), sensor: sensor || 'quest_app', type: type,\n      payload: payload || {}, confidence: confidence == null ? null : confidence,\n    });\n    if (Report.queue.length > 200) Report.queue = Report.queue.slice(Report.queue.length - 200);\n  },\n\n  flush: function () {\n    if (!PC.online || Net.isBusy('observe')) return;\n    if (Report.status) attempt('report.status', function () { Report.event('status', Report.status()); });\n    var batch = Report.queue.slice(0, 60);\n    Report.queue = Report.queue.slice(batch.length);\n    Net.call('observe', { url: url('/observe'), method: 'POST', json: { events: batch }, responseType: 'json', timeout: 8 }, function (r) {\n      if (!r.ok) Report.queue = batch.filter(function (e) { return e.type !== 'status'; }).concat(Report.queue).slice(-200);\n    });\n  },\n};\n\n// ---- PC の画面の操作ボタンを受ける ----\nvar Control = {\n  after: null,\n  handlers: {},\n  on: function (name, fn) { Control.handlers[name] = fn; },\n\n  poll: function () {\n    if (!PC.online || Net.isBusy('control')) return;\n    Net.call('control', { url: url('/control/next?after=' + (Control.after == null ? 0 : Control.after)), method: 'GET', responseType: 'json', timeout: 4 }, function (r) {\n      if (!r.ok || !r.json) return;\n      var latest = r.json.latest || 0;\n      // 初めて / PC アプリが起動し直した: 前に押されたものは動かさない\n      if (Control.after == null || latest < Control.after) { Control.after = latest; return; }\n      (r.json.commands || []).forEach(function (c) {\n        Control.after = Math.max(Control.after, c.id);\n        var fn = Control.handlers[c.command];\n        if (!fn) { log('PC control: not used on the Quest: ' + c.command); return; }\n        log('PC control: ' + c.command);\n        attempt('PC control ' + c.command, function () { fn(c.args || {}); });\n      });\n      Control.after = Math.max(Control.after, latest);\n    });\n  },\n};\n\n// ---- 視界の表示 (HUD) ----\nvar Hud = {\n  guideTimer: null,\n  noticeTimer: null,\n  pc: function () {\n    var text, color;\n    if (PC.online) { text = '● PC 接続中'; color = '#7be0a6'; }\n    else if (PC.state === 'notFound') { text = '● PC が見つかりません'; color = '#ffb86b'; }\n    else { text = '● PC を探しています…'; color = '#ffd27a'; }\n    store.set('hud.pc', text);\n    ui.setColor('pcText', color);\n    // 推論の実行先を出す。Quest の中だけで完結しているとは言わない (仕様 11.3)\n    store.set('cohabit.backend', PC.online ? '推論 — ' + PC.inferenceShort\n      : 'PC が来るまで、ヒントと答え合わせはお休み');\n  },\n  guide: function (text, seconds) {\n    store.set('hud.guide', text);\n    if (Hud.guideTimer) clearTimeout(Hud.guideTimer);\n    Hud.guideTimer = seconds ? later('hud.guide', seconds * 1000, function () { store.set('hud.guide', ''); }) : null;\n  },\n  notice: function (text, seconds) {\n    store.set('hud.notice', text);\n    if (Hud.noticeTimer) clearTimeout(Hud.noticeTimer);\n    Hud.noticeTimer = seconds ? later('hud.notice', seconds * 1000, function () { store.set('hud.notice', ''); }) : null;\n  },\n};\n\n// ---- 今どこまで進んでいるか (HUD の字幕の上の 1 行。PC の画面にも status.stage で出る) ----\n// マイク (状態と音量) | 話しています… / 文字にしています… n秒 / あなた: … / 考え中… n秒 (何を) / 順番待ち / 妹が話しています / 失敗の短い知らせ\nvar LLM_JA = { problem: '問題を作っています', ask: 'ヒント・説明', answer: '採点', check: 'ノートを見ています', chat: 'おしゃべり', glance: '机を見ています' };\nvar MIC_JA = { off: 'オフ', permission: '許可待ち', denied: '許可されていない', noDevice: 'マイクが無い', failed: '開けない', on: '聞いています' };\nvar Stage = {\n  sttSince: 0,\n  heard: null,      // { text, until }\n  error: null,      // { text, until }\n  last: '',\n  kind: 'idle',\n\n  micStatus: function () {\n    if (!HAS.mic) return 'noDevice';\n    if (!Settings.get('mic', true)) return 'off';\n    var st = attempt('mic.status', function () { return mic.status ? mic.status() : (store.get('mic.active') ? 'on' : 'off'); });\n    return st || 'off';\n  },\n  micLevel: function () {\n    if (!HAS.mic) return 0;\n    var v = attempt('mic.level', function () { return mic.level ? mic.level() : store.get('mic.level'); });\n    return typeof v === 'number' ? v : 0;\n  },\n  bar: function (level) {\n    var n = Math.max(0, Math.min(5, Math.round(level * 5)));\n    return '●●●●●'.slice(0, n) + '・・・・・'.slice(0, 5 - n);\n  },\n  sttBegin: function () { Stage.sttSince = Date.now(); Stage.render(); },\n  sttEnd: function (text, r) {\n    Stage.sttSince = 0;\n    if (text) Stage.heard = { text: 'あなた: 「' + clip(text, 30) + '」', until: Date.now() + 6000 };\n    else Stage.heard = { text: r && !r.ok ? '聞き取れなかった (' + Stage.errText(r) + ')' : '聞き取れなかった', until: Date.now() + 6000 };\n    Stage.render();\n  },\n  errText: function (r) {\n    if (!PC.online || (r && r.error === 'offline')) return 'PC につながっていない';\n    if (r && r.status === 429) return 'LLM の回数制限。少し待って';\n    if (r && (r.status === 0 || r.error === 'watchdog')) return 'PC から返事が無い';\n    if (r && r.status >= 500) return 'LLM が答えない';\n    return 'うまくいかなかった' + (r && r.status ? ' (' + r.status + ')' : '');\n  },\n  fail: function (r) { Stage.error = { text: '× ' + Stage.errText(r), until: Date.now() + 8000 }; Stage.render(); },\n  secs: function (since) { return Math.max(0, Math.round((Date.now() - since) / 1000)) + '秒'; },\n\n  activity: function () {\n    var now = Date.now();\n    if (Stage.sttSince) { Stage.kind = 'stt'; return '文字にしています… ' + Stage.secs(Stage.sttSince); }\n    if (HAS.mic && Settings.get('mic', true) && (attempt('mic.speaking', function () { return mic.speaking ? mic.speaking() : store.get('mic.speaking'); }))) { Stage.kind = 'listening'; return '話しています…'; }\n    var heard = Stage.heard && now < Stage.heard.until ? Stage.heard.text : '';\n    if (Llm.busy) {\n      Stage.kind = 'llm';\n      return (heard ? clip(heard, 16) + ' → ' : '') + '考え中… ' + Stage.secs(Llm.busySince) + ' (' + (LLM_JA[Llm.busy] || Llm.busy) + ')' + (Llm.waiting.length ? ' · 順番待ち ' + Llm.waiting.length : '');\n    }\n    if (heard) { Stage.kind = 'heard'; return heard; }\n    if (Voice.speaking) { Stage.kind = 'speaking'; return Voice.handle ? '妹が話しています' : '妹が話しています (字幕)'; }\n    if (Stage.error && now < Stage.error.until) { Stage.kind = 'error'; return Stage.error.text; }\n    if (Llm.bg) { Stage.kind = 'background'; return '(裏で' + (LLM_JA[Llm.bg] || Llm.bg) + ' ' + Stage.secs(Llm.bgSince) + ')'; }\n    Stage.kind = 'idle';\n    return '';\n  },\n  text: function () {\n    var st = Stage.micStatus();\n    var micPart = 'マイク ' + (st === 'on' ? Stage.bar(Stage.micLevel()) : (MIC_JA[st] || st));\n    var act = attempt('stage.activity', Stage.activity) || '';\n    return micPart + (act ? '  |  ' + act : '');\n  },\n  render: function () {\n    var t = attempt('stage.text', Stage.text);\n    if (t != null && t !== Stage.last) { Stage.last = t; store.set('hud.stage', t); }\n  },\n};\n\nattempt('startup', function () {\n  scene.setVisible('Quiz', false);\n  scene.setVisible('Settings', false);\n  scene.setVisible('Consent', false);\n  scene.setVisible('Address', false);\n  ui.setVisibility('subtitlePlate', false);\n  store.set('talk.line', '');\n  store.set('cohabit.sending', '');\n  store.set('hud.notice', '');\n  Hud.pc();\n});\n",
+      "enabled": true,
+      "createdAt": "2026-10-12T01:58:26.520Z",
+      "updatedAt": "2026-10-12T13:14:48.265Z"
+    },
+    {
+      "id": "d1c731c2-1a13-489f-873b-f4b945b3e5c8",
+      "name": "記憶",
+      "trigger": {
+        "type": "onStart"
+      },
+      "code": "// ==== 記憶 (仕様 7.3 / 5.5 / 11.4 / 24.1 / 25) ====\n// 端末に残すのは「妹として覚えていること」(出来事・物・関係・席) だけ。学習記録・苦手の要約は PC が持つ (タブレットと共通)。\n// どの記録にも「いつ・何から分かったか・どれくらい確か」を付ける。記憶に無いことは話さない (仕様 15.1)。\n// 「長い記憶」を切ると、新しい出来事はこのセッションの間だけ覚え、端末には残さない (仕様 25)。\nvar EVENT_JA = {\n  session_started: '会えた', session_paused: 'ヘッドセットが外された', session_resumed: 'また会えた',\n  study_started: '勉強を始めた', study_paused: '勉強を中断した', study_ended: '勉強を終えた',\n  problem_shown: '問題を出した', hint_given: 'ヒントを出した', hint_declined: 'ヒントを断られた', ask_unanswered: '返事がなかった',\n  user_said: '言われた', user_solved_problem: '問題が解けた', user_missed_problem: '答えが違った',\n  noticed_object: '見慣れない物を見た', asked_about_object: '物について聞いた', object_explained: '物について教わった',\n  consent: '写真を送るかを決めてもらった',\n};\nvar EPISODES_MAX = 200;\n\nvar Memory = {\n  sessionOnly: [], // 長い記憶を切っているときの、このセッションだけの出来事\n\n  enabled: function () { return Settings.get('memory', true); },\n  episodes: function () { return (store.get('memory.episodes') || []).concat(Memory.sessionOnly); },\n\n  remember: function (event, detail, source, confidence) {\n    var e = { t: nowIso(), event: event, detail: clip(detail || '', 120), source: source || 'conversation', confidence: confidence == null ? 1 : confidence };\n    if (event !== 'said') Report.event('memory', { event: event, text: (EVENT_JA[event] || event) + (e.detail ? ': ' + e.detail : ''), source: e.source }, e.confidence, e.source);\n    if (!Memory.enabled()) {\n      Memory.sessionOnly.push(e);\n      if (Memory.sessionOnly.length > 100) Memory.sessionOnly = Memory.sessionOnly.slice(-100);\n    } else {\n      var list = store.get('memory.episodes') || [];\n      list.push(e);\n      if (list.length > EPISODES_MAX) list = list.slice(list.length - EPISODES_MAX);\n      store.set('memory.episodes', list);\n    }\n    if (typeof Panel !== 'undefined') attempt('panel.memory', Panel.refreshMemory);\n  },\n\n  recent: function (n) {\n    var list = Memory.episodes();\n    return list.slice(Math.max(0, list.length - (n || 20)));\n  },\n\n  relation: function () {\n    return (!Memory.enabled() && store.get('session.relation')) || store.get('relation.state') || { affinity: 0.3, mood: 0, activity: 0.5, hintDeclines: 0, sessions: 0, lastSessionEnd: null };\n  },\n  updateRelation: function (change) {\n    var r = Memory.relation();\n    for (var k in change) r[k] = change[k];\n    r.affinity = Math.max(0, Math.min(1, r.affinity || 0));\n    r.mood = Math.max(-1, Math.min(1, r.mood || 0));\n    r.hintDeclines = Math.max(0, Math.min(20, r.hintDeclines || 0));\n    if (Memory.enabled()) store.set('relation.state', r);\n    else store.set('session.relation', r); // 残さない (persist に入っていない)\n    return r;\n  },\n\n  // 物は「最後にどこで見たか」だけを覚える。今もそこにあるとは言わない (仕様 5.5)\n  sawObject: function (name, where, confidence) {\n    var objects = store.get('memory.objects') || {};\n    objects[name] = { where: where, t: nowIso(), confidence: confidence };\n    var keys = Object.keys(objects);\n    if (keys.length > 60) { // 古いものから忘れる\n      keys.sort(function (a, b) { return objects[a].t < objects[b].t ? -1 : 1; });\n      keys.slice(0, keys.length - 60).forEach(function (k) { delete objects[k]; });\n    }\n    if (Memory.enabled()) store.set('memory.objects', objects);\n  },\n  lastSeen: function (name) {\n    var objects = store.get('memory.objects') || {};\n    if (objects[name]) return objects[name];\n    // 「ハサミ」と「青いハサミ」のような言い方の違いは、含まれていれば同じとみなす\n    var keys = Object.keys(objects).filter(function (k) { return k.indexOf(name) >= 0 || name.indexOf(k) >= 0; });\n    return keys.length ? objects[keys[0]] : null;\n  },\n\n  // LLM に渡す「覚えていること」。時刻と出どころ付き。ここに無い出来事は語らせない\n  forPrompt: function () {\n    var lines = Memory.recent(20).map(function (e) {\n      return '- ' + e.t + ' [' + e.source + ', ' + Math.round(e.confidence * 100) + '%] ' + (EVENT_JA[e.event] || e.event) + (e.detail ? ': ' + e.detail : '');\n    });\n    var objects = store.get('memory.objects') || {};\n    var seen = Object.keys(objects).slice(0, 15).map(function (k) { return '- ' + k + ': 最後に見たのは ' + objects[k].where + ' (' + objects[k].t + ')'; });\n    var r = Memory.relation();\n    return '覚えている出来事 (これ以外は知らない):\\n' + (lines.join('\\n') || '- (まだ無い)') +\n      '\\n最後に見た物:\\n' + (seen.join('\\n') || '- (無い)') +\n      '\\n関係: 親密度 ' + r.affinity.toFixed(2) + ' / 機嫌 ' + r.mood.toFixed(2) + ' / ヒントを断られた回数 ' + r.hintDeclines;\n  },\n\n  // 設定パネルに出す「覚えていること」(新しい順。仕様 25: 見られる・消せる)\n  view: function (n) {\n    var list = Memory.episodes().filter(function (e) { return e.event !== 'said'; });\n    var lines = list.slice(Math.max(0, list.length - (n || 7))).reverse().map(function (e) {\n      // 設定パネルの 1 行 (38 px で全角 28 文字) に収める: 今日なら時刻だけ、別の日なら日付だけ、中身は 10 文字まで\n      var d = new Date(e.t);\n      var today = new Date().toDateString() === d.toDateString();\n      var when = today ? ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2) : (d.getMonth() + 1) + '/' + d.getDate();\n      var detail = e.detail ? '「' + clip(e.detail, 11) + '」' : '';\n      return when + '  ' + (EVENT_JA[e.event] || e.event) + detail;\n    });\n    if (!Memory.enabled()) lines.unshift('(長い記憶は切っています。今回の分だけ)');\n    return lines.join('\\n') || 'まだ何も覚えていません';\n  },\n\n  // ---- 消す (仕様 11.4)。学習記録は PC の画面の「データ」で消す ----\n  forget: function (what) {\n    if (what === 'today') {\n      var dayStart = new Date();\n      dayStart.setHours(0, 0, 0, 0);\n      store.set('memory.episodes', (store.get('memory.episodes') || []).filter(function (e) { return new Date(e.t).getTime() < dayStart.getTime(); }));\n      Memory.sessionOnly = [];\n    } else if (what === 'relation') {\n      storage.forget('relation.');\n    } else if (what === 'objects') {\n      storage.forget('memory.objects');\n      storage.forget('memory.interests');\n      store.set('memory.episodes', (store.get('memory.episodes') || []).filter(function (e) {\n        return ['noticed_object', 'asked_about_object', 'object_explained'].indexOf(e.event) < 0;\n      }));\n    } else if (what === 'seat') {\n      Presence.forgetSeat();\n    } else if (what === 'all') {\n      storage.forget('memory.');\n      storage.forget('learning.'); // 前の版が端末に残していた学習記録も消す\n      storage.forget('relation.');\n      Presence.forgetSeat();\n      Memory.sessionOnly = [];\n    }\n    storage.save();\n    Report.event('memory', { event: 'forgotten', text: '消した: ' + what }, 1, 'user_command');\n    log('memory forgotten: ' + what);\n    if (typeof Panel !== 'undefined') attempt('panel.memory', Panel.refreshMemory);\n  },\n\n  // 特定の物に関する記録だけを消す (仕様 11.4)。声: 「〇〇のこと忘れて」\n  forgetObject: function (name) {\n    var objects = store.get('memory.objects') || {};\n    var hit = Object.keys(objects).filter(function (k) { return k.indexOf(name) >= 0 || name.indexOf(k) >= 0; });\n    hit.forEach(function (k) { delete objects[k]; });\n    store.set('memory.objects', objects);\n    store.set('memory.interests', (store.get('memory.interests') || []).filter(function (i) { return hit.indexOf(i.name) < 0 && i.name.indexOf(name) < 0; }));\n    store.set('memory.episodes', (store.get('memory.episodes') || []).filter(function (e) { return String(e.detail).indexOf(name) < 0; }));\n    storage.save();\n    Report.event('memory', { event: 'forgotten', text: '物の記録を消した: ' + name }, 1, 'user_command');\n    return hit.length > 0;\n  },\n};\n",
+      "enabled": true,
+      "createdAt": "2026-10-12T01:58:26.523Z",
+      "updatedAt": "2026-10-12T13:14:48.272Z"
+    },
+    {
+      "id": "cfd1c06d-9015-423d-9ec3-748430ddc297",
+      "name": "声と会話",
+      "trigger": {
+        "type": "onStart"
+      },
+      "code": "// ==== 声と会話 (仕様 CH-03 / 8.2 / 8.6 / 19.6) ====\n// 聞く: quest-input のマイクが「話し終わった」ら WAV を PC の音声認識へ (同時に 1 本。待っているのは最後の 1 つだけ)。\n// 話す: 読み上げの音声を、妹の位置から鳴らす (VRM なので口が声に合わせて動く)。字幕も出す。新しい言葉が来たら前の声は止める。\n// 勉強の中身 (ヒント・答え合わせ) は「PC の先生」がする。ここは、それ以外のおしゃべり。\n// PC に届かないときは字幕だけで話し、「PC とつながってない」は 1 分に 1 回まで言う。\nvar PERSONA =\n  'あなたはユーザーの妹のキャラクター。現実の部屋の中に MR で表示されている。短く、自然な話し言葉で、1〜2 文で答える。\\n' +\n  '守ること: 下の「覚えている出来事」と、今渡された観測に無いことを、見た・知っているように言わない。' +\n  'ユーザーがヘッドセットを外していた間のことは分からない。物の場所は「最後に見たのは〜」と時刻付きで言い、今もあるとは言わない。' +\n  '感情は演出であり、本当に感じているとは言わない。勉強中は答えそのものを言わない。\\n' +\n  '話し方: 兄に話す妹のタメ口 (です・ます は使わない)。声で読み上げるので、数式の記号 ($ や \\\\) ・かっこのト書き・「」で囲んだ台詞は書かない。';\n\n// LLM の返事を、声で読める短い台詞に整える (ローカルの小さなモデルは指示を守りきれないため)\nfunction cleanReply(text) {\n  if (!text) return null;\n  var t = String(text).replace(/<think>[\\s\\S]*?<\\/think>/g, '').replace(/\\$|\\\\[a-z]+|\\\\/g, '').replace(/（[^）]*）/g, '').replace(/\\([^)]*[ぁ-んァ-ヶ一-龠][^)]*\\)/g, '').replace(/\\n+/g, ' ').trim();\n  t = t.replace(/^「(.*)」$/, '$1').trim();\n  var sentences = t.match(/[^。！？!?]+[。！？!?]?/g) || [];\n  t = sentences.slice(0, 2).join('').trim();\n  return t || null;\n}\n\n// PC の Say の表情 → VRM の表情\nvar EXPRESSION_VRM = { happy: 'happy', surprised: 'surprised', worried: 'sad', thinking: 'relaxed' };\n\nvar Voice = {\n  speaking: false,\n  quiet: false,   // 「静かにして」で true (仕様 19.6: 自発発話を止められる)\n  lineId: 0,\n  handle: null,\n  wantAudio: null, // 読み上げの通信がふさがっている間に来た言葉 (最後の 1 つだけ)\n  offlineSaidAt: 0,\n  recentLines: [], // 最近の妹の言葉 (スピーカーの声を拾ったか見分ける)\n\n  // what: 文字か、PC の Say ({ text, expression?, audio? })\n  say: function (what, done) {\n    var text = typeof what === 'string' ? what : (what && what.text);\n    if (!text) { if (done) attempt('say.done', done); return; }\n    text = clip(String(text), 220);\n    var audioPath = what && typeof what === 'object' ? what.audio : null;\n    var expression = what && typeof what === 'object' ? EXPRESSION_VRM[what.expression] : null;\n    // 前の声を止める (重ねて話さない)\n    if (Voice.handle && HAS.audio) { var h = Voice.handle; Voice.handle = null; attempt('audio.stop', function () { audio.stop(h); }); }\n    var id = ++Voice.lineId;\n    store.set('talk.line', text);\n    ui.setVisibility('subtitlePlate', true);\n    Memory.remember('said', text, 'self');\n    Voice.recentLines.push(text);\n    if (Voice.recentLines.length > 4) Voice.recentLines = Voice.recentLines.slice(-4);\n    Report.event('action', { what: 'say', text: text, by: audioPath ? 'pc_teacher' : 'quest' });\n    Voice.speaking = true;\n    if (expression && sisterHere()) attempt('expression', function () { vrm.setExpression(CONFIG.character, expression, 60); });\n    var finished = false;\n    var finish = function () {\n      if (finished) return;\n      finished = true;\n      if (Voice.lineId === id) {\n        Voice.speaking = false;\n        if (expression && sisterHere()) attempt('expression', function () { vrm.setExpression(CONFIG.character, expression, 0); });\n        later('subtitle', 2500, function () {\n          if (Voice.lineId !== id) return; // 次の言葉が出ている\n          store.set('talk.line', '');\n          ui.setVisibility('subtitlePlate', false);\n        });\n      }\n      if (done) attempt('say.done', done);\n    };\n    var readSeconds = Math.min(10, 1.2 + text.length / 7); // 声が出せないときは、読む時間だけ「話している」\n    // 終わりの知らせが来なくても「話している」のままにしない (残ると自分から話さず・ヒントも聞かなくなる)\n    later('say.watchdog', (readSeconds + 20) * 1000, function () {\n      if (!finished && Voice.lineId === id && Voice.handle && HAS.audio) { var hh = Voice.handle; Voice.handle = null; attempt('audio.stop', function () { audio.stop(hh); }); }\n      finish();\n    });\n    if (!PC.online || !HAS.audio) { later('say.read', readSeconds * 1000, finish); return; }\n    Voice.fetchAudio(id, text, audioPath, finish, readSeconds);\n  },\n\n  fetchAudio: function (id, text, audioPath, finish, readSeconds) {\n    var opts = audioPath\n      ? { url: /^https?:\\/\\//.test(audioPath) ? audioPath : url(audioPath), method: 'GET', responseType: 'base64', timeout: 15 }\n      : { url: url('/v1/audio/speech'), method: 'POST', json: { model: CONFIG.ttsModel, voice: CONFIG.ttsVoice, input: text, response_format: 'wav' }, responseType: 'base64', timeout: 15 };\n    var started = Net.call('tts', opts, function (r) {\n      // 待たせていた言葉があれば、それを取りに行く\n      var waiting = Voice.wantAudio;\n      Voice.wantAudio = null;\n      if (waiting && waiting.id === Voice.lineId) Voice.fetchAudio(waiting.id, waiting.text, waiting.audioPath, waiting.finish, waiting.readSeconds);\n      if (id !== Voice.lineId) { finish(); return; } // もう次の言葉が出ている: 古い声は鳴らさない\n      if (!r.ok || !r.base64) { // 声が出せなくても字幕は出ている (仕様 8.6)\n        if (r.status !== 204) log('tts failed: ' + (r.error || r.status));\n        later('say.read', readSeconds * 1000, finish);\n        return;\n      }\n      var opts2 = sisterHere() ? { at: CONFIG.character } : {};\n      Voice.handle = audio.play(r.base64, opts2, function () { finish(); });\n    });\n    if (!started) Voice.wantAudio = { id: id, text: text, audioPath: audioPath, finish: finish, readSeconds: readSeconds };\n  },\n\n  // 自分から話しかけるとき (静音中・話している最中・ユーザーが話している最中は言わない)\n  offer: function (what) {\n    if (Voice.quiet || Voice.speaking || store.get('mic.speaking')) return false;\n    Voice.say(what);\n    return true;\n  },\n\n  // PC に届かない・LLM が答えない: 短く 1 回だけ言う (毎回は言わない)\n  unreachable: function (r) {\n    if (r && r.error === 'superseded') return;\n    Stage.fail(r || { error: 'offline' });\n    if (Date.now() - Voice.offlineSaidAt < 60000) return;\n    Voice.offlineSaidAt = Date.now();\n    if (!PC.online) Voice.say('ごめん、今 PC とつながってないの。つながったら手伝うね');\n    else if (r && r.status === 429) Voice.say('ちょっと考えすぎちゃった。少ししてからもう一回言って');\n    else Voice.say('ごめん、今うまく考えられないみたい');\n  },\n\n  chat: function (userText, extra, done) {\n    var messages = [\n      { role: 'system', content: PERSONA + '\\n\\n' + Memory.forPrompt() + (extra ? '\\n\\n今の状況: ' + extra : '') },\n      { role: 'user', content: userText },\n    ];\n    Llm.run('chat', { url: url('/v1/chat/completions'), method: 'POST', json: { model: CONFIG.chatModel, messages: messages, max_tokens: 200 }, responseType: 'json', timeout: 40 },\n      function (r) { done(cleanReply(replyText(r)), r); }, true);\n  },\n\n  setQuiet: function (on) {\n    Voice.quiet = on;\n    Settings.set('quiet', on);\n  },\n};\nVoice.quiet = Settings.get('quiet', false);\n\n// ---- 聞く ----\nvar Ears = {\n  pending: null,\n  heardCount: 0,\n  hear: function (wav) {\n    if (!PC.online) { Voice.unreachable(null); return; }\n    var started = Net.call('stt', {\n      url: url('/v1/audio/transcriptions'), method: 'POST',\n      form: { model: CONFIG.sttModel, language: 'ja', file: { base64: wav, filename: 'speech.wav', type: 'audio/wav' } },\n      responseType: 'json', timeout: 20,\n    }, function (r) {\n      var text = r.ok && r.json ? String(r.json.text || '').trim().replace(/^[\\s。、.]+$/, '') : '';\n      if (!r.ok) log('stt failed: ' + (r.error || r.status));\n      if (text && Ears.isEcho(text)) { log('stt: heard my own voice; ignored: ' + text); Stage.sttEnd('', null); Stage.heard.text = '(妹の声を拾ったので無視)'; text = ''; }\n      else Stage.sttEnd(text, r);\n      if (text) {\n        Ears.heardCount += 1;\n        Memory.remember('user_said', text, 'microphone_asr', 0.9);\n        Report.event('observation', { what: 'speech', text: '聞こえた: 「' + text + '」' }, 0.9, 'microphone');\n        attempt('onUserSaid', function () { onUserSaid(text); });\n      }\n      var next = Ears.pending;\n      Ears.pending = null;\n      if (next) Ears.hear(next);\n    });\n    if (!started) Ears.pending = wav; // 前の言葉を文字にしている間は、最後の 1 つだけ待たせる\n    else Stage.sttBegin();\n  },\n  // 妹の声 (スピーカー) を拾っただけか: 最近の妹の言葉に、聞こえた文字の 6 文字以上がそのまま入っている\n  isEcho: function (text) {\n    var t = String(text).replace(/[\\s、。！？!?,.]/g, '');\n    if (t.length < 4) return false;\n    return Voice.recentLines.some(function (line) {\n      var l = String(line).replace(/[\\s、。！？!?,.]/g, '');\n      if (l.indexOf(t) >= 0) return true;\n      for (var i = 0; i + 6 <= t.length; i += 3) if (l.indexOf(t.slice(i, i + 6)) >= 0) return true;\n      return false;\n    });\n  },\n};\n\nvar Mic = {\n  wanted: function () { return HAS.mic && Settings.get('mic', true) && PC.wearing; },\n  lastSpeechEndAt: 0,\n  crossed: false,        // 前の発話のあとで、音量が「話し始め」を超えたことがあるか\n  quietSince: Date.now(),\n  warned: false,\n  nextWatchAt: 0,\n  apply: function () {\n    if (!HAS.mic) return;\n    attempt('mic.apply', function () { if (Mic.wanted()) mic.start(); else mic.stop(); });\n    Mic.quietSince = Date.now();\n    Mic.crossed = false;\n    Stage.render();\n  },\n  // 毎秒: 開いているはずなのに閉じていれば開き直す (起動直後は拡張機能の準備がまだのことがある)。\n  // 勉強中に 60 秒、声が 1 度も「話し始め」の音量に届かなければ、1 回だけ知らせる\n  watch: function () {\n    if (!HAS.mic) return;\n    var st = Stage.micStatus();\n    if (Mic.wanted() && (st === 'off' || st === 'failed') && Date.now() >= Mic.nextWatchAt) {\n      Mic.nextWatchAt = Date.now() + 5000;\n      attempt('mic.restart', function () { mic.start(); });\n    }\n    if (st === 'denied' && !Mic.toldDenied) { Mic.toldDenied = true; Hud.notice('マイクが許可されていません (Quest の設定 → アプリ → 権限 → マイク)', 20); }\n    if (st !== 'on' || !Mic.wanted()) { Mic.quietSince = Date.now(); return; }\n    if (Mic.level() >= Mic.threshold) Mic.crossed = true;\n    if (Mic.crossed) { Mic.quietSince = Date.now(); Mic.crossed = false; return; }\n    if (!Mic.warned && Study.mode === 'study' && Date.now() - Math.max(Mic.quietSince, Mic.lastSpeechEndAt) > 60000) {\n      Mic.warned = true;\n      Hud.notice('声が届いていないかも (マイクの許可・音量)', 15);\n      log('mic: no voice above threshold for 60 s while studying');\n    }\n  },\n  threshold: 0.35, // quest-input の voiceThreshold と同じ値\n  level: function () { return Stage.micLevel(); },\n};\n\nif (HAS.mic) {\n  mic.on('speechEnd', safe('mic.speechEnd', function (r) {\n    Mic.lastSpeechEndAt = Date.now();\n    Stage.render();\n    if (!Settings.get('mic', true)) return;\n    if (!r || !r.ok || !r.wav || r.seconds < 0.4) return;\n    // 妹が話している間の声も文字にする (割り込みを捨てない)。妹の声を拾っただけなら、文字にしたあとで捨てる\n    Ears.hear(r.wav);\n  }));\n  mic.on('speechStart', safe('mic.speechStart', function () { Mic.crossed = true; Stage.render(); }));\n}\n\n// 言われたことの振り分け。操作・同意・勉強・記憶の操作が先、それ以外は会話\nfunction onUserSaid(text) {\n  if (Consent.onSpeech(text)) return;\n  if (/静かに|黙って/.test(text)) { Voice.setQuiet(true); Voice.say('うん、静かにしてるね'); return; }\n  if (/話していい|しゃべっていい|喋っていい/.test(text)) { Voice.setQuiet(false); Voice.say('やった'); return; }\n  if (/^設定|設定(を)?(開|ひら|見せ)/.test(text)) { Panel.show(); return; }\n  var forget = /(.+?)のこと(は)?(を)?(忘れて|わすれて)/.exec(text);\n  if (forget) {\n    var name = forget[1].replace(/^(あの|その|この)/, '');\n    Voice.say(Memory.forgetObject(name) ? name + 'のこと、忘れたよ' : name + 'のことは、もともと覚えてなかったよ');\n    return;\n  }\n  if (Study.onSpeech(text)) return;\n  if (Curiosity.onSpeech(text)) return;\n  var where = /(.+?)(って|は|が)?(どこ|どこにある)/.exec(text);\n  if (where) {\n    var seen = Memory.lastSeen(where[1].replace(/[はがの]$/, ''));\n    if (seen) { Voice.say('最後に見たのは' + seen.where + 'だよ。今もあるかは分かんないけど'); return; }\n  }\n  // 勉強中の質問は PC の先生へ (タブレットと同じ先生が答える)\n  if (Study.mode === 'study' && Teacher.problem && /[?？]|かな$|の$|って何|ってなに|どう|なんで|どうして|教えて|わから|分から/.test(text)) {\n    Teacher.ask('hint', text, true);\n    return;\n  }\n  if (!PC.online) { Voice.unreachable(null); return; }\n  Voice.chat(text, Study.describe(), function (reply, r) {\n    if (reply) {\n      Voice.say(reply);\n      Memory.updateRelation({ affinity: Memory.relation().affinity + 0.005 });\n    } else Voice.unreachable(r);\n  });\n}\n",
+      "enabled": true,
+      "createdAt": "2026-10-12T01:58:26.527Z",
+      "updatedAt": "2026-10-12T13:14:48.281Z"
+    },
+    {
+      "id": "b1121c74-62bc-4b26-a211-42b3640f7b44",
+      "name": "PC の先生",
+      "trigger": {
+        "type": "onStart"
+      },
+      "code": "// ==== PC の先生 (Cohabit PC の /tablet/api/*。タブレットと同じ先生・同じ今の問題・同じ学習記録) ====\n// 教科は決めない。問題を作る・ノートを読む・正誤・ヒント・説明は、すべて PC の LLM がする (Quest は式を計算しない)。\n// タブレットで始めた問題は、Quest をかぶってもそのまま続く (/tablet/api/session を 5 秒ごとに見る)。\n// どの返事も、送ったときと問題が変わっていたら捨てる。PC に届かなければ、妹が 1 回だけ短く言って、勉強はそのまま続ける。\n\n// ---- 机の「今見ているところ」と、その写真 ----\nvar Desk = {\n  capturing: false,\n  lookingDown: function () {\n    var p = viewer.pose();\n    return !!p && p.tracking !== false && !!p.forward && p.forward.y < -0.35;\n  },\n  // 見ている先が机ならその点。見ていなければ null (机全体を見られる前提にしない: 仕様 5.3)\n  gazePoint: function () {\n    if (!HAS.room || !Desk.lookingDown()) return null;\n    var hit = room.lookAt('table');\n    if (!hit || !hit.hit) hit = room.lookAt('any'); // 机として登録されていない台でも、下を向いて見ている面なら使う\n    return hit && hit.hit && (!hit.normal || hit.normal.y > 0.7) ? { x: hit.x, y: hit.y, z: hit.z } : null;\n  },\n  // 見ている机の 50 cm 四方を撮る → fn('data:image/jpeg;base64,…' か null)。同意が無ければ撮らない (仕様 8.2 / 25)\n  photo: function (fn) {\n    if (Desk.capturing || !HAS.camera || !attempt('camera.available', function () { return camera.available(); })) { fn(null); return; }\n    if (!Consent.imagesAllowed()) { fn(null); return; }\n    var point = Desk.gazePoint();\n    if (!point) { fn(null); return; }\n    Desk.capturing = true;\n    store.set('cohabit.sending', '● 見ている机の 50cm 四方を PC へ送っています (保存しません)'); // 何を送っているかを見せる (仕様 25)\n    var done = false;\n    var finish = function (image) {\n      if (done) return;\n      done = true;\n      Desk.capturing = false;\n      if (!image) store.set('cohabit.sending', '');\n      attempt('desk.photo', function () { fn(image); });\n    };\n    var watchdog = later('desk.watchdog', 12000, function () { finish(null); });\n    try {\n      camera.capture({ maxWidth: 1024, quality: 80, around: { x: point.x, y: point.y, z: point.z, size: 0.5 } }, function (shot) {\n        clearTimeout(watchdog);\n        if (!shot || !shot.ok || !shot.image) { log('capture failed: ' + (shot && shot.error)); finish(null); return; }\n        finish('data:image/jpeg;base64,' + shot.image);\n      });\n    } catch (e) { clearTimeout(watchdog); finish(null); }\n  },\n  sent: function () { store.set('cohabit.sending', ''); },\n};\n\nvar Teacher = {\n  problem: null,     // { id, subject, text, goal }\n  solved: false,\n  gen: 0,            // 問題が変わるたびに増える (古い返事を捨てる)\n  solvedCount: 0,    // この勉強で解けた数 (終わりのひとこと用。記録は PC)\n  nextSyncAt: 0,\n  autoNextTimer: null,\n\n  // ---- 問題 ----\n  setProblem: function (p, how) {\n    if (!p || !p.id) return false;\n    if (Teacher.problem && Teacher.problem.id === p.id) return false;\n    Teacher.problem = { id: String(p.id), subject: String(p.subject || ''), text: String(p.text || ''), goal: String(p.goal || '') };\n    Teacher.solved = false;\n    Teacher.gen += 1;\n    if (Teacher.autoNextTimer) { clearTimeout(Teacher.autoNextTimer); Teacher.autoNextTimer = null; }\n    Teacher.stopChoosing(); // タブレット等から問題が来たら、選ぶのは終わり\n    if (Study.mode !== 'idle') Board.show(Teacher.problem); // 勉強していないときは、始めたときに出す\n    Study.onNewProblem();\n    Memory.remember('problem_shown', (Teacher.problem.subject ? Teacher.problem.subject + ': ' : '') + Teacher.problem.text, how || 'pc_teacher');\n    Report.event('action', { what: 'quiz', text: '問題を出した (' + (how || 'pc_teacher') + '): ' + clip(Teacher.problem.text, 80) });\n    return true;\n  },\n  clearProblem: function () {\n    Teacher.problem = null;\n    Teacher.solved = false;\n    Teacher.gen += 1;\n    if (!Teacher.choosing) Board.hide(); // 何をやるか聞いている板は残す\n  },\n\n  // ---- 何をやるかを選ぶ (問題は勝手に決めない。ユーザーが言ったものだけ) ----\n  // choosing: null | 'continue' (PC にある問題を続けるか聞いた) | 'topic' (何をやるか聞いた) | 'waiting' (頼んだ問題を待っている)\n  choosing: null,\n  chooseTimer: null,\n  stopChoosing: function () {\n    Teacher.choosing = null;\n    if (Teacher.chooseTimer) { clearTimeout(Teacher.chooseTimer); Teacher.chooseTimer = null; }\n  },\n  micHint: function () {\n    if (!HAS.mic || !Settings.get('mic', true)) return 'マイクが止まっています。設定 (左手メニュー) でマイクを入れて、声で教えてね';\n    if (!PC.online) return 'PC につながると、声で選べます';\n    return '例: 英語の現在完了 / 数学の二次関数 / 苦手なの / おまかせ';\n  },\n  offerContinue: function () {\n    if (!Teacher.problem) { Teacher.askTopic(); return; }\n    Teacher.stopChoosing();\n    Teacher.choosing = 'continue';\n    var short = clip(Teacher.problem.text, 18);\n    Voice.say('さっきの『' + short + '』の続き、やる？');\n    Board.prompt('続き、やる？', Teacher.problem.text, '「うん」で続き / 「別の」で選び直す');\n    Teacher.chooseTimer = later('choose.timeout', 20000, function () {\n      Teacher.chooseTimer = null;\n      if (Teacher.choosing === 'continue' && Study.mode === 'study') Teacher.askTopic();\n    });\n  },\n  askTopic: function (silent) {\n    Teacher.stopChoosing();\n    Teacher.choosing = 'topic';\n    if (!silent) Voice.say('今日は何やる？ 教科とか単元を言って');\n    Board.prompt('今日は何やる？', '教科や単元を声で言ってね', Teacher.micHint());\n  },\n  continueProblem: function () {\n    Teacher.stopChoosing();\n    Board.hide();\n    Board.show(Teacher.problem);\n    Voice.say('じゃあ続きね');\n  },\n  // 選んでいる間に言われたこと。使ったら true\n  choose: function (text) {\n    var c = Teacher.choosing;\n    if (!c || c === 'waiting') return false;\n    if (c === 'continue') {\n      if (/別|ほか|他|違う|ちがう|ううん|いや|やらない|いい$|いいや/.test(text)) { Teacher.askTopic(); return true; }\n      if (/^(うん|はい|やる|お願い|いいよ|そう|おっけー|OK)|続き/i.test(text)) { Teacher.continueProblem(); return true; }\n      // 続けるとも別とも言わずに、やりたいことを言った: それを選んだことにする\n    }\n    if (Teacher.problem && !Teacher.solved && /さっき|続き/.test(text)) { Teacher.continueProblem(); return true; }\n    if (/苦手|おまかせ|お任せ|まかせる|任せる/.test(text)) { Teacher.newProblem('weak'); return true; }\n    var topic = String(text).replace(/^(えっと|えーと|うーん|じゃあ|今日は|きょうは)[、,\\s]*/g, '')\n      .replace(/(の問題)?(を|が|で)?(やる|やりたい|勉強する|勉強したい|にする|がいい|お願い|おねがい|出して|ちょうだい|ください|かな|で)?[。!！?？\\s]*$/, '').trim();\n    if (topic.length < 2) { Voice.say('ごめん、もう一回。教科か単元を言って'); return true; }\n    Teacher.newProblem('topic', { topic: clip(topic, 60) });\n    return true;\n  },\n\n  // from: next | weak | topic | text。level: easier | same | harder\n  newProblem: function (from, extra) {\n    if (!PC.online) { Voice.unreachable(null); return; }\n    var wasChoosing = Teacher.choosing;\n    if (wasChoosing) Teacher.choosing = 'waiting';\n    var body = { from: from };\n    if (extra && extra.topic) body.topic = extra.topic;\n    if (extra && extra.level) body.level = extra.level;\n    if (extra && extra.text) body.text = extra.text;\n    var gen = Teacher.gen;\n    Board.waiting('問題を考えています…');\n    Llm.run('problem', { url: url('/tablet/api/problem'), method: 'POST', json: body, responseType: 'json', timeout: 45 }, function (r) {\n      Board.waiting(null);\n      if (Teacher.choosing === 'waiting') Teacher.choosing = 'topic'; // うまくいかなければ、聞いたまま次の言葉を待つ\n      if (r.status === 409 && from === 'weak') { // まだ記録が無い: 何をやるかを聞く (勝手に決めない)\n        Voice.say('まだ記録が無いから、何をやるか教えて');\n        if (Study.mode === 'study') Teacher.askTopic(true);\n        return;\n      }\n      if (r.status === 409) { if (Study.mode === 'study') Teacher.askTopic(); return; } // 前の問題が無い → 何をやるか聞く\n      if (!r.ok || !r.json || !r.json.problem || !r.json.problem.id) {\n        Teacher.failed(r, 'problem');\n        if (wasChoosing && Study.mode === 'study') Board.prompt('今日は何やる？', '教科や単元を声で言ってね', Teacher.micHint());\n        return;\n      }\n      var same = Teacher.problem && Teacher.problem.id === String(r.json.problem.id);\n      if (!same && gen !== Teacher.gen && Teacher.problem) return; // その間に別の問題が来た (タブレットから等)\n      if (!same) Teacher.setProblem(r.json.problem, 'pc_teacher');\n      if (r.json.say) Voice.say(r.json.say);\n    }, true);\n  },\n\n  // ---- ヒント / 説明 / 答え (level: hint | explain | answer)。withPhoto なら見ている机も見せる ----\n  ask: function (level, question, withPhoto) {\n    if (!PC.online) { Voice.unreachable(null); return; }\n    if (!Teacher.problem && !question) {\n      Voice.say('どの問題か分かんないや。「問題出して」って言ってくれたら出すよ');\n      return;\n    }\n    var gen = Teacher.gen;\n    var send = function (page) {\n      if (gen !== Teacher.gen) { Desk.sent(); return; }\n      var body = { level: level };\n      if (Teacher.problem) body.problemId = Teacher.problem.id;\n      if (question) body.question = clip(question, 300);\n      if (page) body.page = page;\n      Llm.run('ask', { url: url('/tablet/api/ask'), method: 'POST', json: body, responseType: 'json', timeout: 45 }, function (r) {\n        Desk.sent();\n        if (gen !== Teacher.gen) return;\n        if (r.status === 409) { Teacher.lostProblem(); return; }\n        if (!r.ok || !r.json || !r.json.say) { Teacher.failed(r, 'ask'); return; }\n        Voice.say(r.json.say);\n        if (level === 'hint') {\n          Memory.remember('hint_given', Teacher.problem ? clip(Teacher.problem.text, 40) : clip(question, 40), 'pc_teacher');\n          Presence.pointAt(Desk.gazePoint());\n        }\n        Report.event('action', { what: 'hint', text: level + ': ' + r.json.say.text });\n      }, true);\n    };\n    if (withPhoto) Desk.photo(send); else send(null);\n  },\n\n  // ---- 声の答え (「答えは …」の後ろ) ----\n  answer: function (said) {\n    if (!Teacher.problem) return false;\n    if (!PC.online) { Voice.unreachable(null); return true; }\n    var gen = Teacher.gen;\n    Llm.run('answer', { url: url('/tablet/api/answer'), method: 'POST', json: { problemId: Teacher.problem.id, answer: clip(said, 200), from: 'quest' }, responseType: 'json', timeout: 45 }, function (r) {\n      if (gen !== Teacher.gen) return;\n      if (r.status === 409) { Teacher.lostProblem(); return; }\n      if (!r.ok || !r.json) { Teacher.failed(r, 'answer'); return; }\n      if (r.json.say) Voice.say(r.json.say);\n      if (r.json.solved || r.json.correct === true) Teacher.onSolved('speech');\n      else if (r.json.correct === false) {\n        Board.footer('もう一回 — 「ヒント」でも');\n        Memory.remember('user_missed_problem', clip(Teacher.problem.text, 40), 'pc_teacher', 0.9);\n      }\n    }, true);\n    return true;\n  },\n\n  // ---- ノートを見て、間違い・迷いを見る (trigger: pause = 手が止まった / request = 「見て」) ----\n  check: function (trigger) {\n    if (!Teacher.problem || !PC.online) { if (trigger === 'request') Teacher.ask('hint', 'ノートを見て', true); return; }\n    if (trigger === 'pause' && !Llm.idle()) return; // 裏の見守りは、ほかの用事があるときはしない\n    var gen = Teacher.gen;\n    Desk.photo(function (page) {\n      if (!page) {\n        if (trigger === 'request') Voice.say(Consent.imagesAllowed() ? 'ノートの方を見ててくれたら、見るよ' : '写真を送らない設定だから、ノートは見られないんだ');\n        return;\n      }\n      if (gen !== Teacher.gen || (trigger === 'pause' && Study.mode !== 'study')) { Desk.sent(); return; }\n      var t0 = Date.now();\n      var started = Llm.run('check', { url: url('/tablet/api/check'), method: 'POST', json: { problemId: Teacher.problem.id, trigger: trigger, page: page, source: 'quest' }, responseType: 'json', timeout: 45 }, function (r) {\n        Desk.sent();\n        if (trigger === 'pause') { Study.lastCheckSeconds = (Date.now() - t0) / 1000; Study.lastCheckEndAt = Date.now(); }\n        if (gen !== Teacher.gen) return;\n        if (r.status === 409) { Teacher.lostProblem(); return; }\n        if (!r.ok || !r.json) { if (trigger === 'request') Teacher.failed(r, 'check'); else log('check failed: ' + (r.error || r.status)); return; }\n        Study.pcStuck = !!r.json.stuck;\n        Report.event('observation', { what: 'notebook', trigger: trigger, solved: !!r.json.solved, stuck: !!r.json.stuck, said: r.json.say ? r.json.say.text : null }, null, 'quest_rgb');\n        if (r.json.say) {\n          if (trigger === 'request') Voice.say(r.json.say);\n          else if (Voice.offer(r.json.say)) Study.lastIntervention = nowIso();\n        } else if (trigger === 'request') Voice.say('うん、そのまま続けて');\n        if (r.json.solved) Teacher.onSolved('notebook');\n      }, trigger === 'request');\n      if (!started) Desk.sent();\n    });\n  },\n\n  onSolved: function (how) {\n    if (Teacher.solved || !Teacher.problem) return;\n    Teacher.solved = true;\n    Teacher.solvedCount += 1;\n    Board.footer('正解！');\n    Memory.remember('user_solved_problem', clip(Teacher.problem.text, 40), how === 'speech' ? 'pc_teacher_speech' : 'pc_teacher_notebook', 0.9);\n    Memory.updateRelation({ affinity: Memory.relation().affinity + 0.01, mood: Memory.relation().mood + 0.1 });\n    if (sisterHere()) {\n      attempt('happy', function () { vrm.setExpression(CONFIG.character, 'happy', 80); });\n      later('happy.off', 2500, function () { if (sisterHere()) vrm.setExpression(CONFIG.character, 'happy', 0); });\n    }\n    // 勉強中なら、少ししたら同じ単元の次の問題 (\"next\": PC が前の結果から難しさを決める)。「終わり」と言えば止まる\n    if (Settings.get('autoNext', true)) {\n      var gen = Teacher.gen;\n      Teacher.autoNextTimer = later('autoNext', 9000, function () {\n        Teacher.autoNextTimer = null;\n        if (gen === Teacher.gen && Teacher.solved && Study.mode === 'study') Teacher.newProblem('next');\n      });\n    }\n  },\n\n  // PC が「その問題は今の問題じゃない」と言った (PC が起動し直した・タブレットで別の問題にした)\n  lostProblem: function () {\n    Teacher.nextSyncAt = 0;\n    Teacher.sync(function (hadProblem) {\n      if (hadProblem) return;\n      if (Study.mode === 'study') Teacher.askTopic(); // 勉強中なら、何をやるか聞き直す\n      else Voice.say('PC の方で問題が変わったみたい');\n    });\n  },\n\n  failed: function (r, what) {\n    log('teacher ' + what + ' failed: ' + (r && (r.error || r.status)));\n    Voice.unreachable(r);\n  },\n\n  // ---- 今の問題を PC と合わせる (タブレット・PC の画面で出した問題も、ここで届く) ----\n  sync: function (done) {\n    if (!PC.online) { if (done) done(!!Teacher.problem); return; }\n    var gen = Teacher.gen;\n    var started = Net.call('session', { url: url('/tablet/api/session'), method: 'GET', responseType: 'json', timeout: 4 }, function (r) {\n      if (!r.ok || !r.json) { if (done) done(!!Teacher.problem); return; }\n      Teacher.weak = r.json.weak && r.json.weak.summary ? String(r.json.weak.summary) : null;\n      var p = r.json.problem;\n      if (Llm.busy === 'problem') { if (done) done(!!Teacher.problem); return; } // 頼んだ問題の返事を待っている: そちらで受ける\n      if (p && p.id && gen === Teacher.gen) {\n        if (Teacher.setProblem(p, 'pc_session') && Study.mode === 'study') Voice.offer('問題、こっちにも出しておくね');\n        if (r.json.solved && !Teacher.solved && Teacher.problem && Teacher.problem.id === p.id) { Teacher.solved = true; Board.footer('正解！'); }\n      } else if (!p && Teacher.problem && gen === Teacher.gen) {\n        Teacher.clearProblem(); // PC にもう問題が無い (起動し直した・消した)\n        if (Study.mode === 'study' && !done && !Teacher.choosing) Teacher.askTopic();\n      }\n      if (done) done(!!Teacher.problem);\n    });\n    if (!started && done) done(!!Teacher.problem);\n  },\n\n  // 毎秒から: 勉強中は 5 秒ごと、それ以外は 30 秒ごと\n  tick: function () {\n    if (!PC.online || Date.now() < Teacher.nextSyncAt) return;\n    Teacher.nextSyncAt = Date.now() + (Study.mode === 'study' ? 5000 : 30000);\n    Teacher.sync();\n  },\n};\n\n// PC が (また) 見つかった: すぐ今の問題を合わせる。勉強中で問題が無ければ、何をやるか聞く\nPC.onOnline(function () {\n  Teacher.nextSyncAt = Date.now() + 5000;\n  Teacher.sync(function (has) {\n    if (Study.mode !== 'study' || Teacher.choosing) return;\n    if (has && !Teacher.solved) Teacher.offerContinue(); else if (!has) Teacher.askTopic();\n  });\n});\n",
+      "enabled": true,
+      "createdAt": "2026-10-12T01:58:26.534Z",
+      "updatedAt": "2026-10-12T13:14:48.286Z"
+    },
+    {
+      "id": "82139fae-9b6a-451e-9a05-df50b8ad2df8",
+      "name": "一緒に勉強",
+      "trigger": {
+        "type": "onStart"
+      },
+      "code": "// ==== 一緒に勉強する (仕様 3.3 / 5.3 / 5.4 / 6.1〜6.4) ====\n// 観測できたことだけで判断する。手が見えないときは「不明」にして口を出さない。\n// 手 (ペン先の代わりに右手の人差し指) が書く動きのあとで止まったら、見ている机の 50cm 四方だけを撮って PC の先生に見せる。\n// 話しかけるかどうかは、決まりで絞った候補 (黙る / 見る / 聞く / ヒント / 励ます) の順位を Lev に任せる。\n// 断られるほど待つ時間が延びる。中身 (ヒント・間違い・正誤) は PC の先生が決める。\n\nvar CANDIDATES_STUDY = ['SILENT', 'OBSERVE', 'ASK', 'HINT', 'ENCOURAGE'];\n\nvar Study = {\n  mode: 'idle',          // idle | study | break\n  pausedBy: null,        // 'break' | 'headset_off'\n  startedAt: null,\n  lastProgressAt: null,  // 最後に書いていた時刻\n  stillSeconds: 0,       // 手が止まっている秒数\n  writing: false,\n  writtenSinceCheck: 0,  // 前にノートを見てから、書いていた秒数\n  handsKnown: false,\n  lastHand: null,\n  lastCheckAt: 0,\n  lastIntervention: null,\n  awaitingHintReply: null, // 「ヒントいる？」と聞いた時刻\n  pcStuck: false,          // PC の先生の見立て (/check の stuck)\n  decisionPending: false,\n  nextDecisionAt: 0,\n\n  set: function (mode) {\n    Study.mode = mode;\n    Study.hud();\n  },\n\n  // 左上の表示: 「● 勉強中 12:34  数学」\n  hud: function () {\n    var text;\n    if (Study.mode === 'study' && Study.startedAt) {\n      var s = Math.floor(secondsSince(Study.startedAt));\n      text = '● 勉強中  ' + Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2) + (Teacher.problem && Teacher.problem.subject ? '  ' + clip(Teacher.problem.subject, 8) : '');\n    } else if (Study.mode === 'break') text = '休憩中 (A で再開)';\n    else text = 'A で勉強を始める';\n    store.set('study.state', text);\n  },\n\n  start: function () {\n    if (Study.mode === 'study') return;\n    var resumed = Study.mode === 'break';\n    if (!resumed) { Study.startedAt = nowIso(); Teacher.solvedCount = 0; }\n    Study.set('study');\n    Study.pausedBy = null;\n    Study.stillSeconds = 0;\n    Study.writtenSinceCheck = 0;\n    Study.lastProgressAt = nowIso();\n    Study.nextDecisionAt = Date.now() + 20000;\n    Memory.remember('study_started', resumed ? '休憩のあと' : '', 'user_command');\n    Report.event('session', { what: 'study_start', text: resumed ? '勉強を再開' : '勉強を始めた' });\n    Presence.stopPlay();\n    Presence.sitBeside();\n    if (Settings.get('consent.images', null) === null && Settings.get('camera', true)) later('consent.ask', 4000, function () { Consent.ask(); });\n    // 問題は勝手に決めない: PC に今の問題があれば続けるか聞き、無ければ何をやるか聞く (タイマーと妹はもう始まっている)\n    Teacher.sync(function (has) {\n      if (Study.mode !== 'study') return;\n      if (resumed && has && !Teacher.solved) { Teacher.continueProblem(); return; }\n      if (has && !Teacher.solved) Teacher.offerContinue();\n      else if (PC.online) Teacher.askTopic();\n      else {\n        Voice.say('うん、隣にいるね。PC につながったら、何やるか聞くね');\n        Board.prompt('今日は何やる？', 'PC につながったら、声で教えてね', Teacher.micHint());\n      }\n    });\n  },\n\n  pause: function (why) {\n    if (Study.mode !== 'study') return;\n    Study.pausedBy = why;\n    Memory.remember('study_paused', why, why === 'headset_off' ? 'headset_sensor' : 'user_command');\n    Report.event('session', { what: 'study_pause', text: why === 'headset_off' ? 'ヘッドセットが外されたので中断' : '休憩' });\n    Study.awaitingHintReply = null;\n    Teacher.stopChoosing();\n    Study.set('break');\n    if (why !== 'headset_off') Voice.say('うん、休憩しよ。続けるときは A か「続きやる」');\n  },\n\n  end: function () {\n    if (Study.mode === 'idle') return;\n    var n = Teacher.solvedCount;\n    Memory.remember('study_ended', n ? n + ' 問解けた' : '', 'app');\n    Report.event('session', { what: 'study_end', text: '勉強を終えた (この勉強で解けた問題 ' + n + ')' });\n    Study.set('idle');\n    Study.pausedBy = null;\n    Study.awaitingHintReply = null;\n    if (Teacher.autoNextTimer) { clearTimeout(Teacher.autoNextTimer); Teacher.autoNextTimer = null; }\n    Teacher.stopChoosing();\n    Board.hide(); // 問題は PC に残る (次に始めたとき・タブレットで続けられる)\n    Voice.say(n > 0 ? 'おつかれ。今日は ' + n + ' 問解けたね' : 'おつかれさま');\n    if (sisterHere()) attempt('stopAnimation', function () { vrm.stopAnimation(CONFIG.character); }); // 力を抜いて立つ\n    storage.save();\n  },\n\n  describe: function () {\n    if (Study.mode === 'idle') return '勉強はしていない';\n    return (Study.mode === 'study' ? '勉強中' : '休憩中') + (Teacher.problem ? '。今の問題: ' + clip(Teacher.problem.text, 80) : '');\n  },\n\n  onNewProblem: function () {\n    Study.pcStuck = false;\n    Study.stillSeconds = 0;\n    Study.writtenSinceCheck = 0;\n    Study.lastProgressAt = nowIso();\n    Study.lastCheckAt = Date.now();\n  },\n\n  onSpeech: function (text) {\n    if (Study.mode !== 'study' && /勉強(を)?(始め|はじめ|する|やる)|続き(を)?(やる|する|から)|^(うん、?)?やる[。!！]?$/.test(text)) { Study.start(); return true; }\n    if (/休憩/.test(text)) { Study.pause('break'); return true; }\n    if (/今日は(もう)?(終わり|おしまい)|勉強(を)?(終わ|おしまい)|^(終わり|おしまい)[。!！]?$/.test(text)) { Study.end(); return true; }\n    if (Study.mode === 'study' && Teacher.choose(text)) return true; // 何をやるかを選んでいる\n    if (Study.awaitingHintReply && secondsSince(Study.awaitingHintReply) < 30) {\n      if (/いらない|大丈夫|自分で|いい$/.test(text)) { Study.declined(); return true; }\n      if (/お願い|いる|うん|ちょうだい|教えて/.test(text)) { Study.awaitingHintReply = null; Teacher.ask('hint', null, true); return true; }\n    }\n    // 問題を出してもらう\n    if (/苦手/.test(text) && /問題|出して/.test(text)) { Teacher.newProblem('weak'); return true; }\n    var wants = /出して|ちょうだい|ください|にして|がいい|やりたい/.test(text);\n    if (wants && /(簡単|やさしい|易しい)(の|問題|め)|簡単に|やさしく/.test(text)) { Teacher.newProblem('next', { level: 'easier' }); return true; }\n    if (wants && /難しい(の|問題)|難しめ|難しく/.test(text)) { Teacher.newProblem('next', { level: 'harder' }); return true; }\n    var topic = /(.+?)の問題(を)?(出して|ちょうだい|ください|やりたい)/.exec(text);\n    if (topic && !/^(次|別|べつ|ほか|他|この|その|今)$/.test(topic[1])) { Teacher.newProblem('topic', { topic: clip(topic[1], 60) }); return true; }\n    if (/別の問題|別のこと|ほかの(問題|こと)/.test(text)) { Teacher.askTopic(); return true; }\n    if (/問題(を)?(出して|ちょうだい|ください)|次の問題|次いこ|^次[。!！]?$/.test(text)) { if (Teacher.problem) Teacher.newProblem('next'); else Teacher.askTopic(); return true; }\n    if (!Teacher.problem) {\n      if (/ヒント|わから|分から|見て/.test(text)) { Teacher.ask('hint', text, true); return true; }\n      return false;\n    }\n    // 今の問題について\n    if (/答え(は)?(何|なに|なん)|答え(を)?(教えて|見せて|言って)/.test(text)) { Teacher.ask('answer', text, true); return true; }\n    var ans = /答えは[、,\\s]*(.+)$/.exec(text);\n    if (ans) { Teacher.answer(ans[1]); return true; }\n    if (/ヒント/.test(text)) { Teacher.ask('hint', null, true); return true; }\n    if (/わから|分から|説明して|どうやって|なんで|どうして/.test(text)) { Teacher.ask('explain', text, true); return true; }\n    if (/見て|合ってる|あってる|できた/.test(text)) { Teacher.check('request'); return true; }\n    return false;\n  },\n\n  declined: function () {\n    Study.awaitingHintReply = null;\n    var r = Memory.updateRelation({ hintDeclines: Memory.relation().hintDeclines + 1 });\n    Memory.remember('hint_declined', Teacher.problem ? clip(Teacher.problem.text, 40) : '', 'conversation');\n    Voice.say('わかった、自分でやってみて');\n    log('hint declined; next time wait longer (declines ' + r.hintDeclines + ')');\n  },\n\n  // ---- 観測 (毎秒。軽いことだけ) ----\n  sampleHands: function () {\n    if (!HAS.hands || store.get('input.mode') !== 'hands' || !store.get('input.right.handTracked')) {\n      Study.handsKnown = false; // 手が見えない = 判定を保留 (仕様 5.4 の「不明」)\n      Study.lastHand = null;\n      return;\n    }\n    var tip = hands.joint('right', 'indexTip');\n    if (!tip) { Study.handsKnown = false; Study.lastHand = null; return; }\n    Study.handsKnown = true;\n    if (Study.lastHand) {\n      var dx = tip.x - Study.lastHand.x, dy = tip.y - Study.lastHand.y, dz = tip.z - Study.lastHand.z;\n      var speed = Math.sqrt(dx * dx + dy * dy + dz * dz); // 1 秒あたり (このスクリプトは 1 秒ごと)\n      Study.writing = speed > 0.004 && speed < 0.15;\n      Study.stillSeconds = speed <= 0.004 ? Study.stillSeconds + 1 : 0;\n      if (Study.writing) {\n        Study.writtenSinceCheck += 1;\n        Study.lastProgressAt = nowIso();\n      }\n    }\n    Study.lastHand = { x: tip.x, y: tip.y, z: tip.z };\n  },\n\n  // 書いたあとで手が止まった瞬間 (ノートが手で隠れにくい) に、見ている机の部分だけを撮って PC の先生に見せる (仕様 18.4)\n  // PC の LLM を占めないように: 前の確認から max(45 秒, 前の確認にかかった時間の 3 倍) あけ、そのあいだに書いたときだけ。\n  // ほかの用事 (声・ヒント・採点・問題) が走っている・待っている・声を文字にしている間はしない\n  lastCheckSeconds: 0,\n  lastCheckEndAt: 0,\n  checkGap: function () { return Math.max(45, 3 * Study.lastCheckSeconds) * 1000; },\n  maybeCheck: function () {\n    if (!Teacher.problem || Teacher.solved || !PC.online || !Llm.idle() || Desk.capturing) return;\n    if (Net.isBusy('stt') || Ears.pending || Teacher.choosing) return;\n    if (!Study.handsKnown || Study.stillSeconds < 4 || Study.writtenSinceCheck < 3) return;\n    if (Date.now() - Math.max(Study.lastCheckAt, Study.lastCheckEndAt) < Study.checkGap() || Voice.speaking) return;\n    if (!Desk.lookingDown()) return;\n    Study.lastCheckAt = Date.now();\n    Study.writtenSinceCheck = 0;\n    Teacher.check('pause');\n  },\n\n  // ---- いつ話しかけるか (仕様 6.4。Lev があれば候補の順位を Lev に任せる) ----\n  state: function () {\n    var r = Memory.relation();\n    var wait = 25 + 15 * Math.min(4, r.hintDeclines); // 断られた経験があるほど長く待つ (仕様 7.4)\n    var noProgress = Math.min(secondsSince(Study.lastProgressAt), 9999);\n    var stuck = Math.min(1, 0.5 * Study.stillSeconds / wait + 0.4 * noProgress / (wait * 3) + (Study.pcStuck ? 0.3 : 0));\n    return {\n      studying: Study.mode === 'study',\n      observed: Study.handsKnown && Desk.lookingDown(),\n      writing: Study.writing,\n      stillSeconds: Study.stillSeconds,\n      secondsWithoutProgress: Math.round(noProgress),\n      problemKnown: !!Teacher.problem,\n      stuck: Math.round(stuck * 100) / 100,\n      waitSeconds: wait,\n      sinceLastIntervention: Math.round(Math.min(secondsSince(Study.lastIntervention), 9999)),\n      quiet: Voice.quiet,\n      hintDeclines: r.hintDeclines,\n    };\n  },\n\n  allowed: function (s) {\n    // 集中を守る決まり (Lev の点数より先に効く)\n    var out = ['SILENT', 'OBSERVE'];\n    if (!s.studying || !s.observed || s.quiet || s.writing || !PC.online) return out;\n    if (s.sinceLastIntervention < 60) return out;\n    if (s.stuck >= 0.6) out.push('ASK');\n    if (s.stuck >= 0.6 && s.problemKnown) out.push('HINT');\n    if (s.stuck < 0.3 && s.secondsWithoutProgress < 20) out.push('ENCOURAGE');\n    return out;\n  },\n\n  decide: function () {\n    if (Study.mode !== 'study' || Study.decisionPending || Date.now() < Study.nextDecisionAt) return;\n    if (Voice.speaking || Study.awaitingHintReply || Llm.busy) return;\n    var s = Study.state();\n    var allowed = Study.allowed(s);\n    if (allowed.length <= 2) return; // 黙る・見る しか許されていない\n    var blocked = CANDIDATES_STUDY.filter(function (c) { return allowed.indexOf(c) < 0; });\n    var rule = allowed.indexOf('ASK') >= 0 ? 'ASK' : 'OBSERVE';\n    var report = function (chosen, scores, by, reason) {\n      Report.event('decision', { lane: 'study', state: s, candidates: allowed, blocked: blocked, scores: scores, chosen: chosen, by: by, reason: reason });\n    };\n    Study.decisionPending = true;\n    var gen = Teacher.gen;\n    var started = Net.call('lev', { url: url('/decision/evaluate'), method: 'POST', json: { kind: 'study', state: s, candidates: allowed }, responseType: 'json', timeout: 8 }, function (r) {\n      Study.decisionPending = false;\n      if (Study.mode !== 'study' || gen !== Teacher.gen) return; // その間に状況が変わった\n      var scores = r.ok && r.json && r.json.scores;\n      if (!scores) { report(rule, null, 'rules', 'Lev が使えない (' + (r.json && r.json.error ? r.json.error.message : r.error || r.status) + ')'); Study.act(rule); return; } // Lev が落ちていても動く\n      var best = allowed.slice().sort(function (a, b) { return (scores[b] || 0) - (scores[a] || 0); })[0];\n      report(best, scores, 'lev', '迷っていそう ' + Math.round(s.stuck * 100) + '% / 手が止まって ' + s.stillSeconds + ' 秒 / 確信度 ' + Math.round((r.json.confidence || 0) * 100) + '%');\n      Study.act(best);\n    });\n    if (!started) Study.decisionPending = false;\n  },\n\n  act: function (action) {\n    // 黙る・見ると決めたら、しばらく決め直さない (毎秒 Lev に聞かない。仕様 8.5)\n    Study.nextDecisionAt = Date.now() + (action === 'SILENT' || action === 'OBSERVE' ? 10000 : 30000);\n    if (action === 'ASK') {\n      if (Voice.offer('ヒントいる？')) {\n        Study.lastIntervention = nowIso();\n        Study.awaitingHintReply = nowIso();\n        if (sisterHere()) attempt('faceUser', function () { scene.faceUser(CONFIG.character, 0.6); });\n        later('ask.timeout', 21000, function () {\n          if (Study.awaitingHintReply && secondsSince(Study.awaitingHintReply) >= 20) {\n            // 無視された = 集中していたのか、聞き方が悪かったのかは分からない。間を空ける根拠にだけ使う (仕様 6.4)\n            Study.awaitingHintReply = null;\n            Memory.remember('ask_unanswered', '', 'microphone', 0.6);\n          }\n        });\n      }\n    } else if (action === 'HINT') {\n      Study.lastIntervention = nowIso();\n      Teacher.ask('hint', null, true);\n    } else if (action === 'ENCOURAGE') {\n      if (Voice.offer('いい感じ')) Study.lastIntervention = nowIso();\n    }\n  },\n};\n\n// PC の画面に出す「妹の今」\nReport.status = function () {\n  var s = Study.state();\n  var r = Memory.relation();\n  return {\n    mode: Study.mode, modeText: { idle: '—', study: '勉強中', break: '休憩中' }[Study.mode],\n    problem: Teacher.problem ? clip(Teacher.problem.text, 80) : null, problemId: Teacher.problem ? Teacher.problem.id : null,\n    stuck: s.stuck, stillSeconds: s.stillSeconds, secondsWithoutProgress: Study.mode === 'study' ? s.secondsWithoutProgress : null,\n    observed: s.observed, waitSeconds: s.waitSeconds, hintDeclines: s.hintDeclines, quiet: Voice.quiet,\n    consentImages: Settings.get('consent.images', null), affinity: r.affinity,\n    memory: Memory.enabled(), camera: Settings.get('camera', true), mic: Settings.get('mic', true), llmBusy: Llm.busy, llmBackground: Llm.bg, stage: Stage.last, stageKind: Stage.kind, micStatus: Stage.micStatus(), heard: Ears.heardCount,\n  };\n};\n\nStudy.hud();\n",
+      "enabled": true,
+      "createdAt": "2026-10-12T01:58:26.542Z",
+      "updatedAt": "2026-10-12T13:14:48.291Z"
+    },
+    {
+      "id": "c62ea0e5-36d0-4c87-942d-720c80782811",
+      "name": "問題の板",
+      "trigger": {
+        "type": "onStart"
+      },
+      "code": "// ==== 問題の板 (Quiz。仕様 6.7) ====\n// PC の先生が出した問題 (教科・問題文。数式は Unicode の素の文字) を、紙のような板に出す。\n// 机を見ていれば机の空いたところ (ノートの右) に寝かせて置き、無理なら目の前 0.75 m に立てて出す。\n// 同じ問題の間は置き直さない。答え合わせの結果は下の行に出る。\nvar Board = {\n  shownId: null,\n  visible: false,\n\n  show: function (problem) {\n    if (!problem) return;\n    store.set('quiz.tag', (problem.subject ? problem.subject : 'もんだい') + (problem.goal ? '  —  ' + clip(problem.goal, 26) : ''));\n    store.set('quiz.footer', '声で「答えは …」  ·  「ヒント」  ·  「見て」');\n    if (Board.shownId === problem.id && Board.visible) { store.set('quiz.text', clip(problem.text, 150)); return; }\n    Board.shownId = problem.id;\n    Board.place();\n    store.set('quiz.text', '');\n    // 書いていくように出る (reveal)\n    later('board.text', 400, function () { if (Board.shownId === problem.id) store.set('quiz.text', clip(problem.text, 150)); });\n  },\n\n  place: function () {\n    var onDesk = false;\n    attempt('board.place', function () {\n      var desk = Desk.gazePoint();\n      if (desk && HAS.room && room.place('Quiz', 'table', 'gaze', 0.004, 'flat')) {\n        // 机の空いているところ (ノートの横) に寄せる: 見ている点から 33 cm 右\n        var p = viewer.pose();\n        var rx = p.forward.z, rz = -p.forward.x; // 水平の右向き\n        var len = Math.sqrt(rx * rx + rz * rz) || 1;\n        scene.move('Quiz', 0.33 * rx / len, 0, 0.33 * rz / len);\n        onDesk = true;\n      }\n    });\n    if (!onDesk) attempt('board.front', function () { viewer.placeInFront('Quiz', 0.75, true); });\n    scene.setVisible('Quiz', true);\n    Board.visible = true;\n  },\n\n  // 問題の代わりに、聞いていることを出す (何をやるか・続けるか)。マイクが無くても、見れば分かるように\n  prompt: function (tag, text, footer) {\n    store.set('quiz.tag', tag);\n    store.set('quiz.text', clip(text, 150));\n    store.set('quiz.footer', footer || '');\n    if (Board.shownId !== 'prompt' || !Board.visible) { Board.shownId = 'prompt'; Board.place(); }\n  },\n\n  // 問題を待っている間 (板がまだ無ければ出さない)\n  waiting: function (text) {\n    if (!Board.visible) return;\n    if (text) store.set('quiz.footer', text);\n    else if (Teacher.problem) store.set('quiz.footer', Teacher.solved ? '正解！' : '声で「答えは …」  ·  「ヒント」  ·  「見て」');\n  },\n\n  footer: function (text) { store.set('quiz.footer', text); },\n\n  hide: function () {\n    Board.visible = false;\n    Board.shownId = null;\n    attempt('board.hide', function () { scene.setVisible('Quiz', false); });\n  },\n};\n",
+      "enabled": true,
+      "createdAt": "2026-10-12T01:58:26.546Z",
+      "updatedAt": "2026-10-12T13:14:48.296Z"
+    },
+    {
+      "id": "2b75dfff-77e9-4f50-99c8-78d323a756fc",
+      "name": "部屋にいる",
+      "trigger": {
+        "type": "onStart"
+      },
+      "code": "// ==== 部屋にいる (仕様 3.2 / 4.2〜4.5 / 7.5 / 7.6 / 2.3) ====\n// 妹の席は、シーンの小さな印 \"Seat\" を空間アンカーに留めて覚える (room.pin)。\n// 座標を数字で覚えると、次に起動したときに原点が変わってずれる。アンカーなら同じ場所に戻る (仕様 4.3)。\n// 歩く動き (FBX) は入れていないので、席・机の横・呼ばれた所へは歩かずにその場に現れる (滑って動くより自然で確実)。\n// 現れる先は、床があり・家具の中でなく・ユーザーに近すぎない所だけ。だめならその場にいる。\nvar SEAT_HIDDEN_Y = -10; // シーンでの Seat の置き場所 (床の下)。アンカーが戻らなければここのまま\n\nvar Presence = {\n  greeted: false,\n  gazeSeconds: 0,\n  lastTouch: 0,\n  arrived: false,\n  unmountedAt: 0,\n  nextPlayAt: Date.now() + 90000,\n  playing: false,\n  playId: 0,\n  PLAY_LABELS: ['table', 'storage', 'couch', 'bed', 'plant', 'lamp'],\n\n  seatPosition: function () {\n    var p = scene.getPosition('Seat');\n    return p && p.y > SEAT_HIDDEN_Y + 5 ? p : null;\n  },\n\n  // そこに立てるか: 真上から下へ当てて最初が床 / ユーザーから 0.6 m 以上 / (from があれば) 途中に何も無い\n  spotFree: function (x, z, from) {\n    if (!HAS.room || !room.ready()) return false;\n    var head = viewer.pose();\n    if (!head) return false;\n    var down = room.raycast(x, head.y + 0.3, z, 0, -1, 0, 'any');\n    if (!down || !down.hit || String(down.label).toLowerCase() !== 'floor') return false;\n    var ux = x - head.x, uz = z - head.z;\n    if (ux * ux + uz * uz < 0.6 * 0.6) return false;\n    if (from) {\n      var dx = x - from.x, dz = z - from.z;\n      var dist = Math.sqrt(dx * dx + dz * dz);\n      if (dist > 0.05) {\n        var ray = room.raycast(from.x, down.y + 0.3, from.z, dx / dist, 0, dz / dist, 'any');\n        if (ray && ray.hit && ray.distance < dist + 0.25) return false; // 途中か、着いた所のすぐ先に何かある\n      }\n    }\n    return true;\n  },\n\n  // そこに現れる (床の高さに置いてこちらを向く)。立てない所なら動かない: false\n  appearAt: function (x, z) {\n    var id = CONFIG.character;\n    if (!sisterHere() || !Presence.spotFree(x, z, null)) { log('appear: spot not free; staying'); return false; }\n    var head = viewer.pose();\n    var floor = room.raycast(x, head.y, z, 0, -1, 0, 'floor');\n    if (!floor || !floor.hit) return false;\n    if (vrm.isWalking(id)) vrm.stop(id);\n    scene.setPosition(id, floor.x, floor.y, floor.z);\n    scene.faceUser(id);\n    return true;\n  },\n\n  // 席が無いときの立ち位置: ユーザーの右斜め前 1.5 m (約 25°) の床。立てなければ、いちばん近い床\n  standNearUser: function (id) {\n    var p = viewer.pose();\n    if (!p || !p.forward || !HAS.room) return false;\n    var fx = p.forward.x, fz = p.forward.z;\n    var len = Math.sqrt(fx * fx + fz * fz) || 1;\n    fx /= len; fz /= len;\n    var x = p.x + 1.35 * fx + 0.6 * fz, z = p.z + 1.35 * fz - 0.6 * fx;\n    if (!Presence.spotFree(x, z, null)) return false;\n    var floor = room.raycast(x, p.y, z, 0, -1, 0, 'floor');\n    if (!floor.hit) return false;\n    scene.setPosition(id, floor.x, floor.y, floor.z);\n    return true;\n  },\n\n  // 覚えている席に戻る。無ければユーザーの近くの床に立つ\n  arrive: function () {\n    if (Presence.arrived || !sisterHere()) return;\n    Presence.arrived = true;\n    var id = CONFIG.character;\n    var place = safe('arrive', function (seat) {\n      if (seat) scene.setPosition(id, seat.x, seat.y, seat.z);\n      else if (!Presence.standNearUser(id) && HAS.room) room.place(id, 'floor', 'nearest', 0);\n      scene.faceUser(id);\n      vrm.stopAnimation(id); // 力を抜いて立つ\n      var r = Memory.updateRelation({ sessions: Memory.relation().sessions + 1, hintDeclines: Math.floor(Memory.relation().hintDeclines * 0.85 * 100) / 100 });\n      Memory.remember('session_started', 'session ' + r.sessions + (seat ? ' (覚えた席)' : ''), 'app');\n      var pinned = HAS.room && room.pinned('Seat');\n      Report.event('session', { what: 'arrive', text: seat ? '覚えていた席に戻った' : (pinned ? '席のアンカーが見つからず、近くの床に立った' : '近くの床に立った (席はまだ決めていない)') });\n      if (!seat && pinned) Hud.guide('前の席が見つかりません。B で決め直せます', 12);\n    });\n    if (!HAS.room || !room.pinned('Seat')) { place(null); return; }\n    // アンカーは読み戻すのに少しかかる。最大 8 秒待つ\n    var waited = 0;\n    var tick = setInterval(safe('arrive.wait', function () {\n      var seat = Presence.seatPosition();\n      waited += 0.5;\n      if (seat || waited >= 8) { clearInterval(tick); place(seat); }\n    }), 500);\n  },\n\n  // 席を決める: 右コントローラーで床かソファを指して B\n  setSeat: function () {\n    if (!HAS.controller || !HAS.room) return;\n    var a = controller.aim('right');\n    if (!a || !a.tracked) { Hud.guide('右のコントローラーが見えていません', 6); return; }\n    if (!room.ready()) { Hud.guide('部屋の準備がまだです (' + room.status() + ')。少し待ってからもう一度 B', 8); return; }\n    // まず指した先の面 (ソファ・ベッドの座面も) に、だめなら床だけを狙い直す\n    var hit = room.raycast(a.x, a.y, a.z, a.forward.x, a.forward.y, a.forward.z, 'any');\n    if (!hit.hit || !hit.normal || hit.normal.y < 0.7) hit = room.raycast(a.x, a.y, a.z, a.forward.x, a.forward.y, a.forward.z, 'floor');\n    if (!hit.hit || !hit.normal || hit.normal.y < 0.7) { Voice.say('そこには座れないかな。床を指してみて'); return; }\n    Presence.stopPlay();\n    scene.setPosition('Seat', hit.x, hit.y, hit.z);\n    room.pin('Seat', safe('seat.pin', function (ok, detail) {\n      if (!ok) { log('seat pin failed: ' + detail); Hud.guide('席を覚えられませんでした。見回してからもう一度 B', 8); }\n      else Report.event('action', { what: 'seat', text: '席を決めた (' + (hit.label || '床') + ')。空間アンカーで覚えた' });\n    }));\n    if (!sisterHere()) return;\n    // 席に現れてこちらを向く (ソファの上でも置ける)\n    if (vrm.isWalking(CONFIG.character)) vrm.stop(CONFIG.character);\n    scene.setPosition(CONFIG.character, hit.x, hit.y, hit.z);\n    scene.faceUser(CONFIG.character, 0.8);\n    Voice.say('ここ、わたしの席ね');\n  },\n\n  forgetSeat: function () {\n    if (HAS.room) room.unpin('Seat');\n    scene.setPosition('Seat', 0, SEAT_HIDDEN_Y, 0);\n  },\n\n  // 勉強を始めたら机の横へ: 右 0.8 m・前 0.3 m (約 70°、0.85 m)。真横 (90°) だと視野の外で、居るのに見えない\n  sitBeside: function () {\n    var p = viewer.pose();\n    if (!p || !p.forward) return;\n    var fx = p.forward.x, fz = p.forward.z;\n    var len = Math.sqrt(fx * fx + fz * fz) || 1;\n    fx /= len; fz /= len;\n    Presence.appearAt(p.x + 0.8 * fz + 0.3 * fx, p.z - 0.8 * fx + 0.3 * fz);\n  },\n\n  // 呼ばれたら近くへ: 前 1.2 m・右 0.35 m (1.25 m。人と話すときの距離で、近すぎない)\n  comeNear: function () {\n    var p = viewer.pose();\n    if (!p || !p.forward) return;\n    var fx = p.forward.x, fz = p.forward.z;\n    var len = Math.sqrt(fx * fx + fz * fz) || 1;\n    fx /= len; fz /= len;\n    Presence.stopPlay();\n    Presence.appearAt(p.x + 1.2 * fx + 0.35 * fz, p.z + 1.2 * fz - 0.35 * fx);\n  },\n\n  pointAt: function (point) {\n    if (!point || !sisterHere()) return;\n    var id = CONFIG.character;\n    vrm.lookAt(id, point.x, point.y, point.z);\n    vrm.setHandTarget(id, 'right', point.x, point.y + 0.05, point.z);\n    later('point.end', 3000, function () {\n      if (!sisterHere()) return;\n      vrm.clearHandTarget(id, 'right');\n      vrm.clearLookAt(id);\n    });\n  },\n\n  greet: function () {\n    Presence.greeted = true;\n    var r = Memory.relation();\n    var last = r.lastSessionEnd;\n    var line;\n    // 見ていないこと (家に帰ってきた等) は言わない (仕様 3.5)\n    if (last && secondsSince(last) < 36 * 3600) line = 'おかえり。今日も勉強やる？';\n    else if (r.sessions > 1) line = 'あ、来た。ひさしぶり';\n    else line = 'あ、来た。勉強するときは A か「勉強始める」って言ってね';\n    if (!Voice.offer(line) && !Voice.quiet) Presence.greeted = false; // 話せなかった: 次に目が合ったときに\n  },\n\n  // ---- 近くの家具を触って遊ぶ (勉強していない・話していないときに、ときどき。設定「部屋を歩く」、最初は切) ----\n  // 歩く動きが無いので、ユーザーが妹を見ていない間に家具の手前へ移ってから触る (目の前で滑っていかない)\n  maybePlay: function () {\n    if (Presence.playing || Date.now() < Presence.nextPlayAt) return;\n    Presence.nextPlayAt = Date.now() + 90000 + Math.random() * 90000; // 1.5〜3 分おき\n    var id = CONFIG.character;\n    if (!Settings.get('play', false) || Study.mode === 'study' || !HAS.room || !sisterHere()) return;\n    if (Voice.speaking || Curiosity.asking || Panel.open || !room.ready() || viewer.isLookingAt(id, 45)) return;\n    var me = scene.getPosition(id);\n    if (!me) return;\n    var near = (room.list('any') || []).filter(function (o) {\n      if (Presence.PLAY_LABELS.indexOf(o.label) < 0 || o.top == null || o.top > 1.3 || o.top < 0.25) return false;\n      var d = Math.sqrt((o.x - me.x) * (o.x - me.x) + (o.z - me.z) * (o.z - me.z));\n      return d > 0.7 && d < 3;\n    });\n    if (!near.length) return;\n    var o = near[Math.floor(Math.random() * near.length)];\n    // 家具の手前 (妹の側)、縁から 0.35 m の床に立つ\n    var dx = me.x - o.x, dz = me.z - o.z;\n    var len = Math.sqrt(dx * dx + dz * dz) || 1;\n    dx /= len; dz /= len;\n    var reach = Math.min(o.width || 0.6, o.depth || 0.6) / 2;\n    var stand = { x: o.x + dx * (reach + 0.35), z: o.z + dz * (reach + 0.35) };\n    if (!Presence.spotFree(stand.x, stand.z, null)) return; // 立てない: 今回はやめる\n    // 触る所: 天面の、妹に近い側の縁から少し内側\n    var touch = { x: o.x + dx * Math.max(0, reach - 0.12), y: o.top + 0.02, z: o.z + dz * Math.max(0, reach - 0.12) };\n    Presence.playing = true;\n    var myId = ++Presence.playId;\n    var still = function () { return myId === Presence.playId && Presence.playing && sisterHere(); };\n    later('play.watchdog', 25000, function () { if (still()) Presence.stopPlay(); }); // 何かが返ってこなくても 25 秒で終わる\n    if (!Presence.appearAt(stand.x, stand.z)) { Presence.playing = false; return; }\n    (function () {\n      vrm.turnTo(id, touch.x, touch.z, 0.6, safe('play.turn', function () {\n        if (!still()) return;\n        vrm.lookAt(id, touch.x, touch.y, touch.z);\n        vrm.setHandTarget(id, 'right', touch.x, touch.y + 0.06, touch.z);\n        vrm.setExpression(id, 'relaxed', 40);\n        // とん、とん (手を少し上げ下げする)\n        later('play.tap1', 700, function () { if (still()) vrm.setHandTarget(id, 'right', touch.x, touch.y, touch.z); });\n        later('play.tap2', 1200, function () { if (still()) vrm.setHandTarget(id, 'right', touch.x, touch.y + 0.07, touch.z); });\n        later('play.tap3', 1700, function () { if (still()) vrm.setHandTarget(id, 'right', touch.x, touch.y, touch.z); });\n        later('play.end', 3200, function () { if (still()) Presence.stopPlay(); });\n        Report.event('action', { what: 'play', text: ({ table: '机', couch: 'ソファ', bed: 'ベッド', storage: '棚', plant: '植木', lamp: 'ランプ' }[o.label] || '家具') + 'を触って遊んだ' });\n      }));\n    })();\n  },\n\n  // 遊ぶのをやめる (勉強が始まった・呼ばれた・席を決めた・外した)。歩いていれば止める\n  stopPlay: function () {\n    if (!Presence.playing) return;\n    Presence.playing = false;\n    Presence.playId++;\n    if (!sisterHere()) return;\n    var id = CONFIG.character;\n    attempt('stopPlay', function () {\n      if (vrm.isWalking(id)) vrm.stop(id);\n      vrm.clearHandTarget(id, 'right');\n      vrm.clearLookAt(id);\n      vrm.setExpression(id, 'relaxed', 0);\n    });\n  },\n\n  // 1 秒ごと: 見られている・触られている\n  tick: function () {\n    var id = CONFIG.character;\n    if (!sisterHere()) return;\n    if (viewer.isLookingAt(id, 12)) {\n      Presence.gazeSeconds += 1;\n      if (!Presence.greeted && Presence.arrived && Presence.gazeSeconds >= 1) Presence.greet();\n      // しばらく顔を見られていたら照れて目をそらす (目が合った、とは言わない: 仕様 7.5)\n      if (Presence.gazeSeconds === 4 && Study.mode !== 'study' && !Presence.playing) {\n        vrm.setExpression(id, 'relaxed', 60);\n        var p = viewer.pose();\n        if (p) vrm.lookAt(id, p.x + 1, p.y - 0.3, p.z);\n        later('gaze.away', 1500, function () { if (sisterHere()) { vrm.clearLookAt(id); vrm.setExpression(id, 'relaxed', 0); } });\n      }\n    } else {\n      Presence.gazeSeconds = 0;\n    }\n    // 手で頭に触れた (手が追跡できていないときは何もしない: 仕様 7.6)\n    if (!HAS.hands || !store.get('input.right.handTracked') || Date.now() - Presence.lastTouch < 8000) return;\n    var head = vrm.bonePosition(id, 'Head');\n    var tip = head ? hands.joint('right', 'indexTip') : null;\n    if (!tip) return;\n    var dx = tip.x - head.x, dy = tip.y - head.y, dz = tip.z - head.z;\n    if (dx * dx + dy * dy + dz * dz < 0.15 * 0.15) {\n      Presence.lastTouch = Date.now();\n      vrm.setExpression(id, 'happy', 70);\n      later('touch.off', 2000, function () { if (sisterHere()) vrm.setExpression(id, 'happy', 0); });\n      if (Study.mode !== 'study') Voice.offer('なに〜？');\n      Memory.updateRelation({ affinity: Memory.relation().affinity + 0.01 });\n      Report.event('observation', { what: 'touch', text: '頭に手が触れた (手の追跡)' }, 0.8, 'hand_tracking');\n    }\n  },\n};\n\nif (HAS.room) room.onReady(safe('room.ready', function () { Presence.arrive(); }));\n// 部屋が読めない (スペースの設定をしていない等) ときも 15 秒で出てくる\nlater('arrive.fallback', 15000, function () { if (!Presence.arrived) { log('room not ready after 15 s; arriving without it'); Presence.arrive(); } });\n\nif (HAS.controller) {\n  controller.on('right.b.down', safe('right.b', function () { Presence.setSeat(); }));\n  controller.on('right.a.down', safe('right.a', function () { if (Study.mode === 'study') Study.end(); else Study.start(); }));\n}\n\n// ヘッドセットを外したら止めて保存。外していた間のことは知らない (仕様 2.3)。かぶったら、外したところから続ける\nif (HAS.headset) {\n  headset.on('unmounted', safe('headset.unmounted', function () {\n    Presence.unmountedAt = Date.now();\n    Study.pause('headset_off');\n    Presence.stopPlay();\n    PC.setWearing(false);\n    Mic.apply(); // 外している間はマイクも止める (仕様 2.3-4)\n    Memory.updateRelation({ lastSessionEnd: nowIso() });\n    Memory.remember('session_paused', 'headset removed', 'headset_sensor');\n    storage.save();\n    Report.flush();\n  }));\n  headset.on('mounted', safe('headset.mounted', function () {\n    var away = Presence.unmountedAt ? (Date.now() - Presence.unmountedAt) / 1000 : 0;\n    Presence.unmountedAt = 0;\n    PC.setWearing(true);\n    Mic.apply();\n    PC.nextCheckAt = 0;       // PC をすぐ確かめる\n    Teacher.nextSyncAt = 0;   // タブレットで進んだ問題も拾う\n    Memory.remember('session_resumed', '', 'headset_sensor');\n    if (Study.pausedBy === 'headset_off') later('resume', 1500, function () { if (Study.mode === 'break' && Study.pausedBy === 'headset_off') Study.start(); });\n    else if (away > 30 * 60) Presence.greeted = false; // 長く外していたら、もう一度だけあいさつ\n  }));\n}\n\nHud.guide('A: 勉強   B: 妹の席   メニュー: 設定   声:「ヒント」「答えは…」', 40);\n",
+      "enabled": true,
+      "createdAt": "2026-10-12T01:58:26.549Z",
+      "updatedAt": "2026-10-12T13:14:48.303Z"
+    },
+    {
+      "id": "00af04d2-18e0-4add-a10c-7d218a2611dc",
+      "name": "気になる物",
+      "trigger": {
+        "type": "onStart"
+      },
+      "code": "// ==== 気になる物 (仕様 18 / 19 / 27.1。「質問する」を決まった引き金にしない) ====\n// 観測 → 関心を保留 → 区切りで候補を比べる → 聞く / 眺める / 待つ / やめる。\n// 机の上を見るのは勉強していないときだけ、3 分に 1 回まで (勉強中は PC の LLM を先生の用事に空けておく)。\n// 関心は自然に消えることもある。経過は PC の画面に出る (QA-03)。\nvar CANDIDATES_CURIOSITY = ['ask_user', 'look_at', 'wait', 'drop_interest'];\n\nvar Curiosity = {\n  lastGlance: Date.now(),\n  lastConsider: 0,\n  asking: null, // 今聞いている関心\n  askTimer: null,\n\n  interests: function () { return store.get('memory.interests') || []; },\n  save: function (list) {\n    // 増え続けないように: 終わった関心は新しい 20 件だけ残す\n    var open = list.filter(function (i) { return i.status === 'pending' || i.status === 'asked'; });\n    var closed = list.filter(function (i) { return !(i.status === 'pending' || i.status === 'asked'); }).slice(-20);\n    store.set('memory.interests', closed.concat(open.slice(-20)));\n  },\n\n  // 机の上をたまに見る (勉強していない・ユーザーが机を見ている・LLM が空いているときだけ)\n  glance: function () {\n    if (Study.mode === 'study' || !PC.online || !Llm.idle() || Desk.capturing) return;\n    if (Settings.get('consent.images', null) !== true) return; // 同意は勉強を始めたときに聞く (ここでは聞かない)\n    if (Date.now() - Curiosity.lastGlance < 180000) return;\n    if (!Desk.gazePoint()) return;\n    Curiosity.lastGlance = Date.now();\n    var point = Desk.gazePoint();\n    Desk.photo(function (page) {\n      if (!page) return;\n      if (Study.mode === 'study') { Desk.sent(); return; }\n      var known = Object.keys(store.get('memory.objects') || {}).slice(0, 30);\n      var started = Llm.run('glance', {\n        url: url('/v1/chat/completions'), method: 'POST', responseType: 'json', timeout: 40,\n        json: { model: CONFIG.visionModel, max_tokens: 300, messages: [{ role: 'user', content: [\n          { type: 'text', text: 'Objects on this desk. Reply JSON only: {\"objects\":[{\"name_ja\": string, \"name_en\": string, \"familiar\": bool (a common stationery/household item), ' +\n            '\"position\": \"left\"|\"center\"|\"right\", \"confidence\": 0..1}]}. Already known by name: ' + known.join(', ') + '. Do not guess what something is used for.' },\n          { type: 'image_url', image_url: { url: page } },\n        ] }] },\n      }, function (r) {\n        Desk.sent();\n        var seen = firstJson(replyText(r));\n        if (seen && seen.objects && seen.objects.slice) Curiosity.onSeen(seen.objects.slice(0, 12), point);\n      }, false);\n      if (!started) Desk.sent();\n    });\n  },\n\n  onSeen: function (objects, point) {\n    var where = { left: '机の左', center: '机の真ん中', right: '机の右' };\n    var list = Curiosity.interests();\n    var fresh = [];\n    Report.event('observation', { what: 'desk', objects: objects }, null, 'quest_rgb');\n    objects.forEach(function (o) {\n      if (!o || !o.name_ja || (o.confidence || 0) < 0.4) return;\n      var name = clip(o.name_ja, 30);\n      Memory.sawObject(name, where[o.position] || '机の上', o.confidence);\n      var explained = Memory.episodes().some(function (e) { return e.event === 'object_explained' && String(e.detail).indexOf(name) === 0; });\n      var existing = list.filter(function (i) { return i.name === name; })[0];\n      if (existing) {\n        // 再観察: 見続けているものは確かになり、関心が少し強まる (仕様 19.3)\n        existing.seen = Math.min(20, (existing.seen || 1) + 1);\n        existing.point = point;\n        existing.lastSeen = nowIso();\n        return;\n      }\n      if (!o.familiar && !explained) {\n        // T0: 見慣れない物 → 関心を保留 (確かさが低いままでもよい)\n        list.push({ name: name, nameEn: o.name_en ? clip(o.name_en, 40) : null, where: where[o.position] || '机の上', point: point, novelty: 1 - (o.confidence || 0) / 2,\n          confidence: o.confidence, seen: 1, status: 'pending', created: nowIso(), lastSeen: nowIso() });\n        fresh.push(name);\n        Memory.remember('noticed_object', name, 'camera_vision', o.confidence);\n      }\n    });\n    Curiosity.save(list);\n    if (fresh.length && point && sisterHere()) {\n      vrm.lookAt(CONFIG.character, point.x, point.y, point.z);\n      later('curiosity.look', 2500, function () { if (sisterHere()) vrm.clearLookAt(CONFIG.character); });\n      Report.event('action', { what: 'look', text: '見慣れない物 (' + fresh.join('、') + ') を見た。関心として保留' });\n    }\n  },\n\n  // 区切りのとき (勉強していない・話していない) に、保留した関心をどうするか決める\n  consider: function (force) {\n    if (Study.mode === 'study' || Voice.speaking || Curiosity.asking || Voice.quiet || Net.isBusy('lev')) return;\n    if (!force && Date.now() - Curiosity.lastConsider < 30000) return;\n    Curiosity.lastConsider = Date.now();\n    var list = Curiosity.interests();\n    var pending = list.filter(function (i) { return i.status === 'pending' && !(i.retryAt && Date.now() < i.retryAt); });\n    if (!pending.length) return;\n    var top = pending.sort(function (a, b) { return b.novelty * (b.seen || 1) - a.novelty * (a.seen || 1); })[0];\n    // 古くなった関心は自然に消える (しつこく聞かない: 仕様 19.6)\n    if (secondsSince(top.created) > 3 * 24 * 3600) {\n      top.status = 'dropped';\n      Curiosity.save(list);\n      Report.event('decision', { lane: 'curiosity', target: top.name, candidates: ['drop_interest'], chosen: 'drop_interest', by: 'rules', reason: '3 日たったので関心が消えた' });\n      return;\n    }\n    // Lev は英語の状態を前提にしている (モデルカード)。英語名が無い古い記録だけ日本語のまま\n    var state = { interest: top.nameEn || top.name, novelty: top.novelty, timesSeen: top.seen || 1, hoursSinceNoticed: Math.round(secondsSince(top.created) / 360) / 10,\n      userStudying: false, userJustFinishedStudying: !!Study.startedAt && Study.mode !== 'study', recognitionConfidence: top.confidence };\n    var choose = function (best, scores, by, reason) {\n      if (Study.mode === 'study' || Curiosity.asking || Voice.speaking) return; // その間に状況が変わった\n      Report.event('decision', { lane: 'curiosity', target: top.name, state: state, candidates: CANDIDATES_CURIOSITY, scores: scores, chosen: best, by: by, reason: reason });\n      if (best === 'ask_user') {\n        Curiosity.asking = top;\n        top.status = 'asked';\n        Curiosity.save(list);\n        // 位置が確かでないときは指差さない (仕様 20.2 / QA-05)\n        if (top.point && (top.confidence || 0) >= 0.6) Presence.pointAt(top.point);\n        else if (top.point && sisterHere()) vrm.lookAt(CONFIG.character, top.point.x, top.point.y, top.point.z);\n        Voice.say('ねえ、' + top.where + 'にある' + top.name + 'みたいなの、あれなに〜？');\n        Memory.remember('asked_about_object', top.name, 'self');\n        // 30 秒答えが無ければ聞くのをやめる。次に聞くのは 10 分後、2 回答えてもらえなければ諦める (しつこく聞かない: 仕様 19.6)\n        if (Curiosity.askTimer) clearTimeout(Curiosity.askTimer);\n        Curiosity.askTimer = later('curiosity.timeout', 30000, function () {\n          Curiosity.askTimer = null;\n          if (Curiosity.asking !== top) return;\n          Curiosity.asking = null;\n          if (sisterHere()) vrm.clearLookAt(CONFIG.character);\n          top.ignored = (top.ignored || 0) + 1;\n          top.status = top.ignored >= 2 ? 'dropped' : 'pending';\n          top.retryAt = Date.now() + 10 * 60 * 1000 * top.ignored;\n          Curiosity.save(Curiosity.interests().map(function (i) { return i.name === top.name ? top : i; }));\n          Report.event('decision', { lane: 'curiosity', target: top.name, candidates: ['wait', 'drop_interest'], chosen: top.status === 'dropped' ? 'drop_interest' : 'wait', by: 'rules', reason: '答えが無かった (' + top.ignored + ' 回目)' });\n        });\n      } else if (best === 'drop_interest') {\n        top.status = 'dropped';\n        Curiosity.save(list);\n      } else if (best === 'look_at' && top.point && sisterHere()) {\n        vrm.lookAt(CONFIG.character, top.point.x, top.point.y, top.point.z);\n        later('curiosity.look', 3000, function () { if (sisterHere()) vrm.clearLookAt(CONFIG.character); });\n      }\n    };\n    var rule = top.novelty > 0.6 || (top.seen || 1) >= 2 ? 'ask_user' : 'look_at';\n    if (!PC.online) { choose(rule, null, 'rules', 'PC に届かないので端末の決まりで'); return; }\n    var started = Net.call('lev', { url: url('/decision/evaluate'), method: 'POST', responseType: 'json', timeout: 8,\n      json: { kind: 'curiosity', state: state, candidates: CANDIDATES_CURIOSITY } },\n    function (r) {\n      var scores = r.ok && r.json && r.json.scores;\n      if (!scores) { choose(rule, null, 'rules', 'Lev が使えない'); return; }\n      choose(CANDIDATES_CURIOSITY.slice().sort(function (a, b) { return (scores[b] || 0) - (scores[a] || 0); })[0], scores, 'lev',\n        top.name + ' を ' + (top.seen || 1) + ' 回見た (確信度 ' + Math.round((r.json.confidence || 0) * 100) + '%)');\n    });\n    if (!started) Curiosity.lastConsider = 0;\n  },\n\n  // 答えを覚える (訂正できる記憶として。次からは聞かない)\n  onSpeech: function (text) {\n    if (!Curiosity.asking) return false;\n    var item = Curiosity.asking;\n    Curiosity.asking = null;\n    if (Curiosity.askTimer) { clearTimeout(Curiosity.askTimer); Curiosity.askTimer = null; }\n    var list = Curiosity.interests();\n    list.forEach(function (i) { if (i.name === item.name) i.status = 'resolved'; });\n    Curiosity.save(list);\n    Memory.remember('object_explained', item.name + ': ' + text, 'user', 1);\n    if (sisterHere()) vrm.clearLookAt(CONFIG.character);\n    if (!PC.online) { Voice.say('へえ、そうなんだ。覚えとくね'); return true; }\n    Voice.chat('さっき聞いた「' + item.name + '」について、ユーザーは「' + text + '」と答えた。短く反応して。', '', function (reply) {\n      Voice.say(reply || 'へえ、そうなんだ。覚えとくね');\n    });\n    return true;\n  },\n};\n",
+      "enabled": true,
+      "createdAt": "2026-10-12T01:58:26.553Z",
+      "updatedAt": "2026-10-12T13:14:48.309Z"
+    },
+    {
+      "id": "42a7545e-91fc-40cc-84fb-2540dddebcd2",
+      "name": "設定パネルと同意",
+      "trigger": {
+        "type": "onStart"
+      },
+      "code": "// ==== 設定パネルと同意 (仕様 8.2 / 11.3 / 11.4 / 25) ====\n// 左コントローラーのメニューボタン / Y (または「設定」と言う) で目の前に出る。\n// カメラ・マイク・長い記憶・自分から話すか・部屋を歩くかを、それぞれ入り切りできる。覚えていることを見て、消せる。\n// 画像を初めて送る前には、何を・どこへ送るかを見せて同意をもらう (勉強を始めたときに 1 回聞く)。\n\n// ---- 同意 ----\nvar Consent = {\n  asking: false,\n  askedAt: 0,\n  timer: null,\n\n  // ノート・机の画像を PC へ送ってよいか。null = まだ聞いていない\n  imagesAllowed: function () {\n    if (!Settings.get('camera', true)) return false;\n    if (!PC.online || !PC.allowImages) return false;\n    var c = Settings.get('consent.images', null);\n    if (c === null) { Consent.ask(); return false; }\n    return c === true;\n  },\n\n  ask: function () {\n    if (Consent.asking || Settings.get('consent.images', null) !== null) return;\n    if (Consent.askedAt && Date.now() - Consent.askedAt < 10 * 60 * 1000) return; // 返事が無かったら 10 分は聞き直さない\n    Consent.asking = true;\n    Consent.askedAt = Date.now();\n    store.set('consent.body',\n      '勉強中に手が止まったときと、「ヒント」「見て」と言ったときに、見ている机の上 (50cm 四方) を撮って PC (' + shortServer() + ') に送ります。\\n' +\n      'PC の先生 (画像を読めるモデル) がノートを読んで、ヒントや答え合わせをします。写真は保存しません。\\n' +\n      '「設定」(左手メニュー) でいつでも止められます。');\n    attempt('consent.show', function () { viewer.placeInFront('Consent', 0.9, true); scene.setVisible('Consent', true); });\n    Voice.say('ノートの写真、PC の先生に見せてもいい？');\n    // 返事が無いまま板を出しっぱなしにしない\n    if (Consent.timer) clearTimeout(Consent.timer);\n    Consent.timer = later('consent.timeout', 60000, function () {\n      Consent.timer = null;\n      if (!Consent.asking) return;\n      Consent.asking = false;\n      scene.setVisible('Consent', false);\n    });\n  },\n\n  answer: function (yes) {\n    Consent.asking = false;\n    if (Consent.timer) { clearTimeout(Consent.timer); Consent.timer = null; }\n    scene.setVisible('Consent', false);\n    Settings.set('consent.images', yes);\n    Memory.remember('consent', yes ? '画像を送ってよい' : '画像は送らない', 'user', 1);\n    Report.event('session', { what: 'consent', text: yes ? '画像を PC へ送ることに同意' : '画像は送らない' });\n    Voice.say(yes ? 'ありがと。読めないときは、読めたふりはしないね' : 'わかった。写真は送らないね。ヒントは声で聞いてくれたら答えるよ');\n  },\n\n  onSpeech: function (text) {\n    if (!Consent.asking) return false;\n    if (/いいよ|いい$|送って(いい|も)|見せて(いい|も)|うん|オッケー|OK/i.test(text)) { Consent.answer(true); return true; }\n    if (/だめ|ダメ|いや|送らないで|やめて/.test(text)) { Consent.answer(false); return true; }\n    return false;\n  },\n};\n\n// ---- 設定パネル ----\nvar Panel = {\n  open: false,\n  confirm: null,     // 消すボタンは 2 回押して消す: { what, until }\n  editingServer: false,\n\n  show: function () {\n    Panel.open = true;\n    Panel.refresh();\n    Panel.refreshMemory();\n    Panel.closeServerEdit();\n    attempt('panel.show', function () { viewer.placeInFront('Settings', 0.9, true); });\n    scene.setVisible('Settings', true);\n  },\n  hide: function () {\n    Panel.open = false;\n    Panel.closeServerEdit();\n    scene.setVisible('Settings', false);\n  },\n  toggle: function () { if (Panel.open) Panel.hide(); else Panel.show(); },\n\n  refresh: function () {\n    var on = function (key, fallback) { return Settings.get(key, fallback); };\n    ui.setText('tglCamera', '写真を送る:  ' + (on('camera', true) ? (on('consent.images', null) === false ? '同意なし' : 'する') : 'しない'));\n    var micSt = Stage.micStatus();\n    ui.setText('tglMic', 'マイク:  ' + (!on('mic', true) ? '止める' : micSt === 'denied' ? '許可されていない' : micSt === 'noDevice' ? '無い' : '聞く'));\n    ui.setText('tglMemory', '長い記憶:  ' + (on('memory', true) ? '残す' : '残さない'));\n    ui.setText('tglTalk', '話しかける:  ' + (on('quiet', false) ? 'しない' : 'する'));\n    ui.setText('tglPlay', '部屋を歩く:  ' + (on('play', false) ? 'する' : 'しない'));\n    ui.setColor('tglCamera', on('camera', true) ? '#ffffff' : '#9aa3b8');\n    ui.setColor('tglMic', on('mic', true) ? '#ffffff' : '#9aa3b8');\n    ui.setColor('tglMemory', on('memory', true) ? '#ffffff' : '#9aa3b8');\n    ui.setColor('tglTalk', on('quiet', false) ? '#9aa3b8' : '#ffffff');\n    ui.setColor('tglPlay', on('play', false) ? '#ffffff' : '#9aa3b8');\n    var state = PC.online ? '  ● 接続中' : PC.state === 'notFound' ? '  ● 見つからない' : '  ● 探しています';\n    store.set('panel.server', 'PC: ' + shortServer() + state);\n    ui.setColor('panelServer', PC.online ? '#7be0a6' : '#ffb86b');\n    store.set('panel.inference', PC.online ? '推論  ' + PC.inferenceShort : 'PC で Cohabit PC を起動すると、自動でつながります');\n  },\n  refreshMemory: function () {\n    if (!Panel.open) return;\n    store.set('panel.memory', Memory.view(4));\n  },\n\n  // 消すのは 2 回押したとき (間違えて押しても消えない)\n  askDelete: function (what, label) {\n    if (Panel.confirm && Panel.confirm.what === what && Date.now() < Panel.confirm.until) {\n      Panel.confirm = null;\n      // 先に言ってから消す (「消したよ」という発言そのものを残さない)\n      Voice.say(what === 'all' ? '全部忘れたよ。はじめまして、かな' : label + '、消したよ');\n      Memory.forget(what);\n      store.set('panel.note', label + 'を消しました');\n      Panel.refresh();\n      return;\n    }\n    Panel.confirm = { what: what, until: Date.now() + 5000 };\n    store.set('panel.note', 'もう一度押すと「' + label + '」を消します (元に戻せません)');\n  },\n\n  // PC のアドレスを入れる (自動で見つからないときだけ。アプリの中のキーボード。設定パネルと入れ替わりに出る)\n  editServer: function () {\n    Panel.editingServer = true;\n    store.set('panel.serverDraft', shortServer());\n    scene.setVisible('Settings', false);\n    attempt('address.show', function () { viewer.placeInFront('Address', 0.9, true); });\n    scene.setVisible('Address', true);\n  },\n  closeServerEdit: function () {\n    var was = Panel.editingServer;\n    Panel.editingServer = false;\n    scene.setVisible('Address', false);\n    if (was && Panel.open) scene.setVisible('Settings', true);\n  },\n  submitServer: function () {\n    var text = String(store.get('panel.serverDraft') || '').trim();\n    if (!text) { Panel.closeServerEdit(); return; }\n    PC.useAddress(text);\n    Control.after = null;\n    store.set('panel.note', 'PC のアドレスを ' + shortServer() + ' にしました。つながるか確かめています');\n    Panel.closeServerEdit();\n    Panel.refresh();\n  },\n};\n\n// ---- ボタン (UI の bindingId がそのままイベント名。ui.on で 1 か所で受ける) ----\nvar UI_EVENTS = {\n  setClose: function () { Panel.hide(); },\n  setServer: function () { Panel.editServer(); },\n  serverCancel: function () { Panel.closeServerEdit(); },\n  'serverKb:submit': function () { Panel.submitServer(); },\n  pcScan: function () { PC.rescan(); Control.after = null; store.set('panel.note', 'PC を探し直しています (20 秒くらい)'); Panel.refresh(); },\n  tglCamera: function () {\n    var next = !Settings.get('camera', true);\n    Settings.set('camera', next);\n    if (next && Settings.get('consent.images', null) === false) { Settings.set('consent.images', null); Consent.askedAt = 0; } // もう一度聞く\n  },\n  tglMic: function () { Settings.set('mic', !Settings.get('mic', true)); Mic.apply(); },\n  tglMemory: function () { Settings.set('memory', !Settings.get('memory', true)); Panel.refreshMemory(); },\n  tglTalk: function () { Voice.setQuiet(!Voice.quiet); },\n  tglPlay: function () { var next = !Settings.get('play', false); Settings.set('play', next); if (!next) Presence.stopPlay(); },\n  delToday: function () { Panel.askDelete('today', '今日の記憶'); },\n  delRelation: function () { Panel.askDelete('relation', '妹との関係'); },\n  delObjects: function () { Panel.askDelete('objects', '物の記録'); },\n  delSeat: function () { Panel.askDelete('seat', '席'); },\n  delAll: function () { Panel.askDelete('all', '全部の記憶'); },\n  consentYes: function () { Consent.answer(true); },\n  consentNo: function () { Consent.answer(false); },\n};\n\nObject.keys(UI_EVENTS).forEach(function (name) { ui.on(name, safe('ui ' + name, UI_EVENTS[name])); });\n\nif (HAS.controller) {\n  controller.on('left.menu.down', safe('left.menu', function () { Panel.toggle(); }));\n  controller.on('left.y.down', safe('left.y', function () { Panel.toggle(); }));\n}\n\nstore.set('panel.note', '');\nMic.apply(); // マイクは最初から聞く (設定で切れる。初回は端末が許可を聞く。開けなかったら「毎秒」が開き直す)\nsetInterval(safe('stage.tick', Stage.render), 300); // 字幕の上の 1 行 (音量と秒数を動かす)\n\n// ---- PC の画面の操作ボタン (Cohabit PC → /control/next) ----\nControl.on('study.start', function () { Study.start(); });\nControl.on('study.break', function () { Study.pause('break'); });\nControl.on('study.end', function () { Study.end(); });\nControl.on('hint.ask', function () { Study.act('ASK'); });\nControl.on('hint.give', function () { Teacher.ask('hint', null, true); });\nControl.on('quiz.offer', function () { if (Study.mode !== 'study') Study.start(); else if (Teacher.problem) Teacher.newProblem('next'); else Teacher.askTopic(); });\nControl.on('presence.come', function () { Presence.comeNear(); });\nControl.on('curiosity.consider', function () { Curiosity.consider(true); });\nControl.on('quiet.on', function () { Voice.setQuiet(true); });\nControl.on('quiet.off', function () { Voice.setQuiet(false); });\nControl.on('say', function (args) { if (args.text) Voice.say(String(args.text).slice(0, 200)); });\n",
+      "enabled": true,
+      "createdAt": "2026-10-12T08:47:53.673Z",
+      "updatedAt": "2026-10-12T13:14:48.315Z"
+    },
+    {
+      "id": "c4760b19-b2cb-4a1d-8956-521a2728d1c3",
+      "name": "毎秒",
+      "trigger": {
+        "type": "interval",
+        "value": 1000
+      },
+      "code": "// ==== 1 秒ごと (interval 1000 ms) ====\n// 観測 → 判断 → 行動 を回す。ここは軽いことだけ: 通信はそれぞれの中で間隔と「同時に 1 本」を守る。\n// どの段も例外を外に出さない (1 つが失敗しても、ほかは動き続ける。ログは同じ場所 1 分に 1 回)。\nvar tickCount = (typeof tickCount === 'number' ? tickCount : 0) + 1;\nattempt('tick.pc', PC.tick);\nattempt('tick.mic', Mic.watch);\nattempt('tick.presence', Presence.tick);\nattempt('tick.play', Presence.maybePlay);\nif (Study.mode === 'study') {\n  attempt('tick.hands', Study.sampleHands);\n  attempt('tick.check', Study.maybeCheck);\n  attempt('tick.decide', Study.decide);\n  attempt('tick.hud', Study.hud);\n} else {\n  attempt('tick.glance', function () { Curiosity.glance(); });\n  attempt('tick.consider', function () { Curiosity.consider(false); });\n}\nattempt('tick.teacher', Teacher.tick);\nif (tickCount % 2 === 0) attempt('tick.control', Control.poll);\nif (tickCount % 4 === 0) attempt('tick.report', Report.flush);\nif (Panel.open && tickCount % 5 === 0) attempt('tick.panel', Panel.refresh);\n",
+      "enabled": true,
+      "createdAt": "2026-10-12T13:14:48.321Z",
+      "updatedAt": "2026-10-12T13:14:48.321Z"
+    }
+  ]
+}

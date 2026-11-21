@@ -1,0 +1,242 @@
+{
+  "id": "aca40bf4-a610-494d-9e5b-7331b2e4658e",
+  "name": "HUD",
+  "scope": "uhd",
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "root": {
+    "id": "105f43bc-1b96-44cd-ae4c-eeb118137f52",
+    "type": "Panel",
+    "layout": "Absolute",
+    "style": {
+      "width": "100%",
+      "height": "100%"
+    },
+    "children": [
+      {
+        "id": "036d4320-86e4-409a-9d4b-c84b78c9149f",
+        "type": "Panel",
+        "style": {
+          "position": "absolute",
+          "left": 490,
+          "top": 236,
+          "width": 520,
+          "height": 56,
+          "backgroundColor": "#0d1018aa",
+          "borderRadius": 28
+        },
+        "children": [
+          {
+            "id": "e5d12560-18d3-4e0c-8f74-1fab289610ea",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 24,
+              "top": 10,
+              "width": 480,
+              "height": 40,
+              "fontSize": 30,
+              "color": "#e3e8ff"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "status",
+            "bind": {
+              "key": "study.state"
+            }
+          }
+        ],
+        "layout": "Absolute"
+      },
+      {
+        "id": "e704b29e-90af-4fbc-be6c-ed9c6243284c",
+        "type": "Panel",
+        "style": {
+          "position": "absolute",
+          "left": 1026,
+          "top": 236,
+          "width": 404,
+          "height": 56,
+          "backgroundColor": "#0d1018aa",
+          "borderRadius": 28
+        },
+        "children": [
+          {
+            "id": "352abe2a-f0e3-4206-9f56-d67ca44aafba",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 22,
+              "top": 10,
+              "width": 370,
+              "height": 40,
+              "fontSize": 30,
+              "color": "#7be0a6"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "pcText",
+            "bind": {
+              "key": "hud.pc"
+            }
+          }
+        ],
+        "layout": "Absolute"
+      },
+      {
+        "id": "c009127b-38fd-4bb9-b427-3fe3b324958d",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 490,
+          "top": 302,
+          "width": 940,
+          "height": 40,
+          "fontSize": 30,
+          "color": "#aab3cc"
+        },
+        "children": [],
+        "content": "",
+        "bindingId": "backend",
+        "bind": {
+          "key": "cohabit.backend"
+        }
+      },
+      {
+        "id": "488f6cf5-7a5a-45b6-91ba-18c8a07273e4",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 490,
+          "top": 348,
+          "width": 940,
+          "height": 40,
+          "fontSize": 30,
+          "color": "#ffd27a"
+        },
+        "children": [],
+        "content": "",
+        "bindingId": "sending",
+        "bind": {
+          "key": "cohabit.sending"
+        }
+      },
+      {
+        "id": "a8b8c045-7bdc-4651-b1a3-ebe7c558eecd",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 490,
+          "top": 394,
+          "width": 940,
+          "height": 40,
+          "fontSize": 30,
+          "color": "#ffd27a"
+        },
+        "children": [],
+        "content": "",
+        "bindingId": "notice",
+        "bind": {
+          "key": "hud.notice"
+        }
+      },
+      {
+        "id": "156b46a4-32ce-4ef0-ae18-fcfdbe5d965e",
+        "type": "Text",
+        "bindingId": "stage",
+        "bind": {
+          "key": "hud.stage"
+        },
+        "content": "",
+        "style": {
+          "position": "absolute",
+          "left": 490,
+          "top": 584,
+          "width": 940,
+          "height": 80,
+          "fontSize": 28,
+          "color": "#c8d3ff",
+          "textAlign": "center"
+        },
+        "children": []
+      },
+      {
+        "id": "0efecdb4-45ad-42a9-9c72-fd92e8093b5f",
+        "type": "Panel",
+        "style": {
+          "position": "absolute",
+          "left": 490,
+          "top": 668,
+          "width": 940,
+          "height": 190,
+          "backgroundColor": "#0d1018cc",
+          "borderRadius": 32
+        },
+        "children": [
+          {
+            "id": "97820385-6ff9-48b0-95f1-b9239c05be9f",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 30,
+              "top": 12,
+              "width": 200,
+              "height": 38,
+              "fontSize": 30,
+              "color": "#a9b6ff"
+            },
+            "children": [],
+            "content": "妹"
+          },
+          {
+            "id": "840de9c9-1344-4c9c-ad2d-ff206bc8931b",
+            "type": "Text",
+            "style": {
+              "position": "absolute",
+              "left": 30,
+              "top": 54,
+              "width": 880,
+              "height": 124,
+              "fontSize": 42,
+              "color": "#ffffff",
+              "textAlign": "center"
+            },
+            "children": [],
+            "content": "",
+            "bindingId": "subtitle",
+            "bind": {
+              "key": "talk.line"
+            },
+            "reveal": {
+              "speed": 20
+            }
+          }
+        ],
+        "bindingId": "subtitlePlate",
+        "layout": "Absolute"
+      },
+      {
+        "id": "62b041ab-2c0f-4d3b-b769-c154a5681527",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 490,
+          "top": 870,
+          "width": 940,
+          "height": 42,
+          "fontSize": 30,
+          "color": "#dfe5f5",
+          "textAlign": "center"
+        },
+        "children": [],
+        "content": "",
+        "bindingId": "guide",
+        "bind": {
+          "key": "hud.guide"
+        }
+      }
+    ]
+  }
+}

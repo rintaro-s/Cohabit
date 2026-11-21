@@ -1,0 +1,6 @@
+CohabitPC/config.json
+CohabitPC/config.json.tmp
+CohabitPC/data/
+__pycache__/
+Cohabit/Backups/
+Cohabit/Build/

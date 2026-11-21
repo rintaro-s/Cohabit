@@ -1,0 +1,122 @@
+{
+  "id": "8fbb049d-2874-45bc-b2aa-229dca384adf",
+  "name": "Address",
+  "scope": "canvas",
+  "resolution": {
+    "width": 1000,
+    "height": 800
+  },
+  "root": {
+    "id": "2bf856d8-b9eb-4c5b-b15d-2b6a233d9429",
+    "type": "Panel",
+    "layout": "Absolute",
+    "style": {
+      "width": "100%",
+      "height": "100%",
+      "backgroundColor": "#11151ef5",
+      "borderRadius": 40
+    },
+    "children": [
+      {
+        "id": "fbe6470f-2962-4365-b947-bb60b4536ee2",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 48,
+          "top": 30,
+          "width": 600,
+          "height": 62,
+          "fontSize": 46,
+          "color": "#ffffff"
+        },
+        "children": [],
+        "content": "PC のアドレス"
+      },
+      {
+        "id": "0837d470-7ce9-4426-baeb-6a7ae405d9c0",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 48,
+          "top": 98,
+          "width": 904,
+          "height": 48,
+          "fontSize": 36,
+          "color": "#9aa3b8"
+        },
+        "children": [],
+        "content": "Cohabit PC の画面に出ているアドレス"
+      },
+      {
+        "id": "b47f7f65-b69e-4026-9c9b-eb159ba4e2d0",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 48,
+          "top": 152,
+          "width": 904,
+          "height": 70,
+          "fontSize": 54,
+          "color": "#ffffff"
+        },
+        "children": [],
+        "content": "",
+        "bind": {
+          "key": "panel.serverDraft"
+        }
+      },
+      {
+        "id": "ca04ef89-4b09-48e1-beed-62115a86332c",
+        "type": "Keyboard",
+        "style": {
+          "position": "absolute",
+          "left": 48,
+          "top": 236,
+          "width": 620,
+          "height": 530,
+          "fontSize": 46,
+          "backgroundColor": "#00000066"
+        },
+        "children": [],
+        "content": "123|456|789|.0:",
+        "bindingId": "serverKb",
+        "bind": {
+          "key": "panel.serverDraft"
+        }
+      },
+      {
+        "id": "7fdf7639-509b-4515-9c84-34d7d9ed7892",
+        "type": "Button",
+        "style": {
+          "position": "absolute",
+          "left": 700,
+          "top": 236,
+          "width": 252,
+          "height": 88,
+          "backgroundColor": "#2a3142",
+          "fontSize": 40,
+          "color": "#ffffff",
+          "borderRadius": 18
+        },
+        "children": [],
+        "content": "やめる",
+        "bindingId": "serverCancel"
+      },
+      {
+        "id": "9a70601c-25d3-4f91-9227-fbce369a7327",
+        "type": "Text",
+        "style": {
+          "position": "absolute",
+          "left": 700,
+          "top": 344,
+          "width": 252,
+          "height": 300,
+          "fontSize": 36,
+          "color": "#9aa3b8"
+        },
+        "children": [],
+        "content": "ポートを書かなければ :8000\n入れたら Enter"
+      }
+    ]
+  }
+}

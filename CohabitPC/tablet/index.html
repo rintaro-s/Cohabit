@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#fdf3f5">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Cohabit ノート</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three/three.module.js",
+      "three/addons/": "./vendor/three/examples/jsm/",
+      "@pixiv/three-vrm": "./vendor/three-vrm/three-vrm.module.js"
+    }
+  }
+  </script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+<div id="app">
+  <header id="top">
+    <section class="problem" id="problem" data-state="empty">
+      <div class="problem-main">
+        <div class="problem-meta">
+          <span class="chip" id="subject">問題</span>
+          <span class="goal" id="goal"></span>
+        </div>
+        <p class="problem-text" id="problemText"></p>
+        <p class="problem-empty" id="problemEmpty">まだ問題がないよ。話題を入れるか、教科書を撮ってね。</p>
+        <div class="problem-loading" id="problemLoading"><span class="spinner"></span><span id="problemLoadingText">妹が問題を考えてる…</span></div>
+      </div>
+      <div class="problem-actions">
+        <button class="pbtn" data-act="topic"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4z"/></svg><span>話題を入れる</span></button>
+        <button class="pbtn" data-act="photo"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><span>教科書を撮る</span></button>
+        <button class="pbtn" data-act="weak"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>苦手から</span></button>
+        <button class="pbtn" data-act="next"><svg viewBox="0 0 24 24"><path d="M5 12h12M13 7l5 5-5 5"/></svg><span>次の問題</span></button>
+      </div>
+      <input type="file" id="photoInput" accept="image/*" capture="environment" hidden>
+    </section>
+    <div class="top-side">
+      <button class="icon-btn" id="settingsBtn" aria-label="設定"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7"/></svg></button>
+      <span class="conn" id="conn" title="PC との接続"></span>
+    </div>
+  </header>
+
+  <main id="stage">
+    <canvas id="ink"></canvas>
+    <div id="marksLayer"></div>
+    <div id="fx"></div>
+
+    <button id="fsBtn" class="float-btn" data-finger-ok hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>全画面に戻す</span></button>
+    <button id="soundBtn" class="float-btn sound" data-finger-ok hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>声を出す (ここをタッチ)</span></button>
+    <aside id="sister" data-presence="tablet">
+      <div class="bubble" id="bubble" hidden>
+        <p id="bubbleText"></p>
+      </div>
+      <div class="watching" id="watching" hidden><span class="eye"></span><span id="watchingText">妹が見てる</span><span class="dots"><i></i><i></i><i></i></span></div>
+      <div class="sis-card" id="sisCard">
+        <canvas id="sisCanvas"></canvas>
+        <div class="sis-placeholder" id="sisPlaceholder"></div>
+        <div class="sis-loading" id="sisLoading">妹を呼んでるところ…</div>
+        <div class="sis-name"><span id="sisName">妹</span></div>
+      </div>
+      <div class="room-note" id="roomNote">
+        <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg>
+        <div><b>部屋にいるよ</b><span>声は部屋のほうで聞こえるよ</span></div>
+      </div>
+    </aside>
+
+    <div class="banner" id="banner" hidden>
+      <span class="banner-dot"></span>
+      <span id="bannerText">PC につながらない。書いたものはこのまま残るよ。</span>
+      <button id="bannerRetry">もう一度</button>
+    </div>
+    <div class="toast" id="toast" hidden></div>
+  </main>
+
+  <footer id="dock">
+    <div class="dock-group tools">
+      <button class="tool on" id="toolPen" aria-label="ペン"><svg viewBox="0 0 24 24"><path d="M4 20l1.2-4.6L15.6 5a2 2 0 0 1 2.8 0l.6.6a2 2 0 0 1 0 2.8L8.6 18.8z"/><path d="M13.8 6.8l3.4 3.4"/></svg><span>ペン</span></button>
+      <button class="tool" id="toolEraser" aria-label="消しゴム"><svg viewBox="0 0 24 24"><path d="M8 20h12"/><path d="M4.6 14.6l9-9a2 2 0 0 1 2.8 0l3 3a2 2 0 0 1 0 2.8L12 18.8H8.8z"/><path d="M9 10.2l4.8 4.8"/></svg><span>消しゴム</span></button>
+      <span class="sep"></span>
+      <button class="tool" id="undoBtn" aria-label="元に戻す"><svg viewBox="0 0 24 24"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5 5 0 0 1 0 10H11"/></svg><span>戻す</span></button>
+      <button class="tool" id="redoBtn" aria-label="やり直す"><svg viewBox="0 0 24 24"><path d="M15 14l5-5-5-5"/><path d="M20 9H9.5a5 5 0 0 0 0 10H13"/></svg><span>やり直す</span></button>
+      <span class="sep"></span>
+      <div class="pager">
+        <button class="tool slim" id="pagePrev" aria-label="前のページ"><svg viewBox="0 0 24 24"><path d="M14 6l-6 6 6 6"/></svg></button>
+        <span class="page-no" id="pageNo">1 / 1</span>
+        <button class="tool slim" id="pageNext" aria-label="次のページ"><svg viewBox="0 0 24 24"><path d="M10 6l6 6-6 6"/></svg></button>
+        <button class="tool" id="pageAdd" aria-label="ページを足す"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M12 10v7M8.5 13.5h7"/></svg><span>ページ</span></button>
+      </div>
+      <button class="tool" id="clearBtn" aria-label="ページを消す"><svg viewBox="0 0 24 24"><path d="M5 7h14M10 7V4h4v3M7 7l1 13h8l1-13"/></svg><span id="clearLabel">全部消す</span></button>
+    </div>
+    <div class="dock-group actions">
+      <button class="act soft" data-ask="hint" id="hintBtn"><span>ヒント</span></button>
+      <button class="act soft" data-ask="explain"><span>わからない</span></button>
+      <button class="act soft" data-ask="answer" id="answerBtn"><span>答え</span></button>
+      <span class="sep"></span>
+      <button class="act" id="lookBtn"><span>見て</span></button>
+      <button class="act primary" id="doneBtn"><span>できた</span></button>
+    </div>
+  </footer>
+</div>
+
+<!-- 最初の 1 タップ (音を出せるようにする・全画面) -->
+<div id="start" data-finger-ok>
+  <div class="start-inner">
+    <div class="start-art" id="startArt"></div>
+    <h1>Cohabit <small>ノート</small></h1>
+    <p class="start-sub">ペンで解いて、妹に赤ペンを入れてもらおう</p>
+    <button id="startBtn" class="start-btn">タップして始める</button>
+    <p class="start-hint" id="startHint">ペンで書く・指でスクロール</p>
+  </div>
+</div>
+
+<!-- 話題を入れる -->
+<div class="sheet" id="topicSheet" hidden>
+  <div class="sheet-card">
+    <h2>どんな問題にする？</h2>
+    <p class="sheet-sub">単元や話題を言うか、打ってね。教科は何でもいいよ。</p>
+    <div class="topic-row">
+      <input id="topicInput" type="text" placeholder="例: 二次方程式の解の公式" autocomplete="off" enterkeyhint="go">
+      <button class="mic" id="micBtn" aria-label="声で入れる"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg></button>
+    </div>
+    <div class="chips" id="topicChips" hidden></div>
+    <div class="sheet-actions">
+      <button class="ghost" data-close>やめる</button>
+      <button class="primary" id="topicGo">これで出して</button>
+    </div>
+  </div>
+</div>
+
+<!-- 次の問題 -->
+<div class="sheet" id="nextSheet" hidden>
+  <div class="sheet-card small">
+    <h2>次はどうする？</h2>
+    <div class="level-row">
+      <button data-level="easier"><b>やさしく</b><span>もう少し簡単に</span></button>
+      <button data-level="same"><b>同じくらい</b><span>似た問題をもう 1 問</span></button>
+      <button data-level="harder"><b>むずかしく</b><span>ひとつ上へ</span></button>
+    </div>
+    <div class="sheet-actions"><button class="ghost" data-close>やめる</button></div>
+  </div>
+</div>
+
+<!-- 設定 -->
+<div class="drawer-scrim" id="drawerScrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head"><h2>設定</h2><button class="icon-btn" id="drawerClose" aria-label="閉じる"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <label class="field"><span>PC のアドレス</span><input id="setAddress" type="url" placeholder="空なら、このページと同じ PC" autocomplete="off"></label>
+  <label class="field"><span>トークン</span><input id="setToken" type="text" placeholder="PC の設定にあれば" autocomplete="off"></label>
+  <div class="field"><span>行の高さ <b id="rowHVal">72</b></span><input id="setRowH" type="range" min="52" max="104" step="4"><small>新しいページから使うよ</small></div>
+  <div class="field"><span>問題の文字の大きさ</span>
+    <div class="seg" id="setTextSize"><button data-v="s">小</button><button data-v="m">中</button><button data-v="l">大</button></div></div>
+  <label class="switch"><input id="setPenOnly" type="checkbox"><span class="track"></span><span class="lbl">ペンだけ (指は全部無視)<small>書くのもボタンもペンだけ。手のひら・指の誤タップを防ぐ。iPad は Apple Pencil を使うと自動でオン。指 4 本を 2 秒押すと解除</small></span></label>
+  <label class="switch"><input id="setFinger" type="checkbox"><span class="track"></span><span class="lbl">指でも書く<small>オフのときペンがあれば指はスクロールだけ</small></span></label>
+  <label class="switch"><input id="setVoice" type="checkbox"><span class="track"></span><span class="lbl">妹の声</span></label>
+  <label class="switch"><input id="setSister" type="checkbox"><span class="track"></span><span class="lbl">妹を出す</span></label>
+  <label class="switch"><input id="setAuto" type="checkbox"><span class="track"></span><span class="lbl">書くのが止まったら見てもらう<small>約 1.5 秒で自動で見てくれるよ</small></span></label>
+  <div class="drawer-foot">
+    <p id="backendInfo"></p>
+    <button class="ghost danger" id="resetNotebook">ノートを全部消す</button>
+  </div>
+</aside>
+</body>
+</html>
